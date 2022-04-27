@@ -1,0 +1,2492 @@
+{
+  "contractName": "IConfig",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "maxLevel",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "tokenType",
+          "type": "uint32"
+        }
+      ],
+      "name": "getTokenInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "fee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct TokenInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "level",
+          "type": "uint32"
+        }
+      ],
+      "name": "getLevelInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "exp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "nextExp",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct LevelInfo",
+          "name": "levelInfo",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "level",
+          "type": "uint32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "attack",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "taoism",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "magic",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "defense",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "magicDefense",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "physicalPower",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "magicPower",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct MainAttrs",
+          "name": "mainAttrs",
+          "type": "tuple"
+        }
+      ],
+      "name": "calcPower",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "power",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getEquipMaxLevel",
+      "outputs": [
+        {
+          "internalType": "uint32[3]",
+          "name": "",
+          "type": "uint32[3]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "number",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint8",
+          "name": "quality",
+          "type": "uint8"
+        }
+      ],
+      "name": "getEquipmentInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "number",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "profession",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "category",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "quality",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool",
+              "name": "locked",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isEquip",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokens",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "power",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "level",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "increaseCount",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "increaseMax",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "suitId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "suitNumber",
+              "type": "uint32"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "attack",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "taoism",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magic",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "defense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicDefense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "physicalPower",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicPower",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct MainAttrs",
+              "name": "mainAttrs",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct EquipmentAttr",
+          "name": "attrs",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "quality",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint32[]",
+          "name": "equipmentIds",
+          "type": "uint32[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "seed",
+          "type": "bytes"
+        }
+      ],
+      "name": "searchEquipment",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "number",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "profession",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "category",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "quality",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool",
+              "name": "locked",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isEquip",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokens",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "power",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "level",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "increaseCount",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "increaseMax",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "suitId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "suitNumber",
+              "type": "uint32"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "attack",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "taoism",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magic",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "defense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicDefense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "physicalPower",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicPower",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct MainAttrs",
+              "name": "mainAttrs",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct EquipmentAttr",
+          "name": "equipment",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "level",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "quality",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "universal",
+          "type": "bool"
+        }
+      ],
+      "name": "getIncreaseConfig",
+      "outputs": [
+        {
+          "internalType": "uint32[2]",
+          "name": "",
+          "type": "uint32[2]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"attack\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"taoism\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magic\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"defense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicDefense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"physicalPower\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicPower\",\"type\":\"uint32\"}],\"internalType\":\"struct MainAttrs\",\"name\":\"mainAttrs\",\"type\":\"tuple\"}],\"name\":\"calcPower\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getEquipMaxLevel\",\"outputs\":[{\"internalType\":\"uint32[3]\",\"name\":\"\",\"type\":\"uint32[3]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"number\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"quality\",\"type\":\"uint8\"}],\"name\":\"getEquipmentInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"number\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"profession\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"category\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"quality\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"locked\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"isEquip\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"increaseCount\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"increaseMax\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"suitId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"suitNumber\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"attack\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"taoism\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magic\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"defense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicDefense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"physicalPower\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicPower\",\"type\":\"uint32\"}],\"internalType\":\"struct MainAttrs\",\"name\":\"mainAttrs\",\"type\":\"tuple\"}],\"internalType\":\"struct EquipmentAttr\",\"name\":\"attrs\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"level\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"quality\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"universal\",\"type\":\"bool\"}],\"name\":\"getIncreaseConfig\",\"outputs\":[{\"internalType\":\"uint32[2]\",\"name\":\"\",\"type\":\"uint32[2]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"}],\"name\":\"getLevelInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"exp\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"nextExp\",\"type\":\"uint32\"}],\"internalType\":\"struct LevelInfo\",\"name\":\"levelInfo\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"tokenType\",\"type\":\"uint32\"}],\"name\":\"getTokenInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"fee\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"}],\"internalType\":\"struct TokenInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxLevel\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"quality\",\"type\":\"uint8\"},{\"internalType\":\"uint32[]\",\"name\":\"equipmentIds\",\"type\":\"uint32[]\"},{\"internalType\":\"bytes\",\"name\":\"seed\",\"type\":\"bytes\"}],\"name\":\"searchEquipment\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"number\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"profession\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"category\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"quality\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"locked\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"isEquip\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"increaseCount\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"increaseMax\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"suitId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"suitNumber\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"attack\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"taoism\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magic\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"defense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicDefense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"physicalPower\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicPower\",\"type\":\"uint32\"}],\"internalType\":\"struct MainAttrs\",\"name\":\"mainAttrs\",\"type\":\"tuple\"}],\"internalType\":\"struct EquipmentAttr\",\"name\":\"equipment\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"calcPower(uint32,(uint32,uint32,uint32,uint32,uint32,uint32,uint32))\":{\"params\":{\"level\":\"\\u7b49\\u7ea7\",\"mainAttrs\":\"\\u5c5e\\u6027\"}},\"getEquipmentInfo(uint32,uint8)\":{\"params\":{\"number\":\"\\u88c5\\u5907\\u7f16\\u53f7\",\"quality\":\"\\u88c5\\u5907\\u54c1\\u8d28\"}},\"getIncreaseConfig(uint256,uint256,bool)\":{\"params\":{\"level\":\"\\u7b49\\u7ea7\\u533a\\u95f4\",\"quality\":\"\\u88c5\\u5907\\u54c1\\u8d28\",\"universal\":\"\\u662f\\u5426\\u4e3a\\u804c\\u4e1a\\u901a\\u7528\\u88c5\\u5907\"}},\"getLevelInfo(uint32)\":{\"params\":{\"level\":\"the hero current level\"}},\"getTokenInfo(uint32)\":{\"params\":{\"tokenType\":\"Index of currencies that can be used to create heroes    \"}},\"searchEquipment(uint8,uint32[],bytes)\":{\"params\":{\"equipmentIds\":\"\\u88c5\\u5907\\u7f16\\u53f7\\u8303\\u56f4\\u5217\\u8868\",\"quality\":\"\\u54c1\\u8d28\",\"seed\":\"\\u51fa\\u73b0\\u591a\\u4e2a\\u65f6\\u968f\\u673a\\u7528\\u7684\\u79cd\\u5b50\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"calcPower(uint32,(uint32,uint32,uint32,uint32,uint32,uint32,uint32))\":{\"notice\":\"\\u6839\\u636e\\u5c5e\\u6027\\u4e0e\\u7b49\\u7ea7\\u8ba1\\u7b97\\u88c5\\u5907\\u6218\\u529b\"},\"getEquipmentInfo(uint32,uint8)\":{\"notice\":\"\\u751f\\u6210\\u88c5\\u5907\"},\"getIncreaseConfig(uint256,uint256,bool)\":{\"notice\":\"\\u83b7\\u53d6\\u88c5\\u5907\\u5f3a\\u5316\\u5c5e\\u6027\\u533a\\u95f4\"},\"getLevelInfo(uint32)\":{\"notice\":\"Array subscript meaning: [hp,mp,defense, magicDefense, attack, magic, taoism, time, exp]\"},\"getTokenInfo(uint32)\":{\"notice\":\"Get information about supported currencies\"},\"maxLevel()\":{\"notice\":\"The highest possible hero level\"},\"searchEquipment(uint8,uint32[],bytes)\":{\"notice\":\"\\u5728\\u7ed9\\u5b9a\\u7684\\u7f16\\u53f7\\u8303\\u56f4\\u4e2d\\u968f\\u673a\\u51fa\\u88c5\\u5907\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/include/IConfig.sol\":\"IConfig\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Structs.sol\":{\"keccak256\":\"0xf2869eeb09a8b799b5af2736f969390543d0f91ab4a1c7d3369e7457a48a2b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a7307d23f005394dfaa029d9a7624cb673078bdc10c58eb1fd2d2173278c5329\",\"dweb:/ipfs/QmXHvvC7zr2F1DnFKpFAr8aURZdkEisBqgWhnTEU4WdK35\"]},\"project:/contracts/include/IConfig.sol\":{\"keccak256\":\"0x6b677a0c9e918f7876917a0f47a067209045ad9ba1e05326e5aa4b27c8bcfd6b\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://a33ad042325e5c173403d7c47a8905730dad83945a609d85bfe1409888b84626\",\"dweb:/ipfs/QmRFiT5nupip5sp3ufsp4DyYiRKpD9vfYGVVyReKQCWRoe\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\n\n// SPDX-License-Identifier: Apache-2.0\n\nimport \"../Structs.sol\";\n\ninterface IConfig {\n    /**\n        The highest possible hero level\n     */\n    function maxLevel() external view returns (uint32);\n\n    /**\n        @notice Get information about supported currencies\n        @param tokenType Index of currencies that can be used to create heroes    \n     */\n    function getTokenInfo(uint32 tokenType) external view returns (TokenInfo memory);\n\n    /**\n        @notice Array subscript meaning: [hp,mp,defense, magicDefense, attack, magic, taoism, time, exp]\n        @param level the hero current level\n     */\n    function getLevelInfo(uint32 level) external view returns (LevelInfo memory levelInfo);\n\n    /**\n        @notice 根据属性与等级计算装备战力\n        @param level 等级\n        @param mainAttrs 属性\n    */\n    function calcPower(uint32 level, MainAttrs memory mainAttrs) external view returns (uint32 power);\n\n    //装备最高可强化等级[普通10,银龙20,金龙30]\n    function getEquipMaxLevel() external view returns (uint32[3] memory);\n\n    /**\n    @notice 生成装备\n    @param number 装备编号\n    @param quality 装备品质\n    */\n    function getEquipmentInfo(uint32 number, uint8 quality) external view returns (EquipmentAttr memory attrs);\n\n    /**\n    @notice 在给定的编号范围中随机出装备\n    @param quality 品质\n    @param equipmentIds 装备编号范围列表\n    @param seed 出现多个时随机用的种子\n     */\n    function searchEquipment(\n        uint8 quality,\n        uint32[] calldata equipmentIds,\n        bytes calldata seed\n    ) external view returns (EquipmentAttr memory equipment);\n\n    /**\n    @notice 获取装备强化属性区间\n    @param level 等级区间\n    @param quality 装备品质\n    @param universal 是否为职业通用装备\n     */\n    function getIncreaseConfig(\n        uint256 level,\n        uint256 quality,\n        bool universal\n    ) external view returns (uint32[2] memory);\n}\n",
+  "sourcePath": "/Users/necklace/work/Legend/Legend/contracts/include/IConfig.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/include/IConfig.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IConfig": [
+        13296
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 13297,
+    "license": "Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13213,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:14"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13214,
+        "nodeType": "ImportDirective",
+        "scope": 13297,
+        "sourceUnit": 11177,
+        "src": "65:24:14",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13296,
+        "linearizedBaseContracts": [
+          13296
+        ],
+        "name": "IConfig",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 13215,
+              "nodeType": "StructuredDocumentation",
+              "src": "115:51:14",
+              "text": "The highest possible hero level"
+            },
+            "functionSelector": "cc06c359",
+            "id": 13220,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "maxLevel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13216,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "188:2:14"
+            },
+            "returnParameters": {
+              "id": 13219,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13218,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13220,
+                  "src": "214:6:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13217,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "214:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "213:8:14"
+            },
+            "scope": 13296,
+            "src": "171:51:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13221,
+              "nodeType": "StructuredDocumentation",
+              "src": "228:153:14",
+              "text": "@notice Get information about supported currencies\n@param tokenType Index of currencies that can be used to create heroes    "
+            },
+            "functionSelector": "cbd90cd0",
+            "id": 13229,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTokenInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13224,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13223,
+                  "mutability": "mutable",
+                  "name": "tokenType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13229,
+                  "src": "408:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13222,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "408:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "407:18:14"
+            },
+            "returnParameters": {
+              "id": 13228,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13227,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13229,
+                  "src": "449:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TokenInfo_$11063_memory_ptr",
+                    "typeString": "struct TokenInfo"
+                  },
+                  "typeName": {
+                    "id": 13226,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13225,
+                      "name": "TokenInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11063,
+                      "src": "449:9:14"
+                    },
+                    "referencedDeclaration": 11063,
+                    "src": "449:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TokenInfo_$11063_storage_ptr",
+                      "typeString": "struct TokenInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:18:14"
+            },
+            "scope": 13296,
+            "src": "386:81:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13230,
+              "nodeType": "StructuredDocumentation",
+              "src": "473:160:14",
+              "text": "@notice Array subscript meaning: [hp,mp,defense, magicDefense, attack, magic, taoism, time, exp]\n@param level the hero current level"
+            },
+            "functionSelector": "1ea49196",
+            "id": 13238,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLevelInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13233,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13232,
+                  "mutability": "mutable",
+                  "name": "level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13238,
+                  "src": "660:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13231,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "660:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "659:14:14"
+            },
+            "returnParameters": {
+              "id": 13237,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13236,
+                  "mutability": "mutable",
+                  "name": "levelInfo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13238,
+                  "src": "697:26:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_LevelInfo_$11165_memory_ptr",
+                    "typeString": "struct LevelInfo"
+                  },
+                  "typeName": {
+                    "id": 13235,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13234,
+                      "name": "LevelInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11165,
+                      "src": "697:9:14"
+                    },
+                    "referencedDeclaration": 11165,
+                    "src": "697:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_LevelInfo_$11165_storage_ptr",
+                      "typeString": "struct LevelInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "696:28:14"
+            },
+            "scope": 13296,
+            "src": "638:87:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13239,
+              "nodeType": "StructuredDocumentation",
+              "src": "731:126:14",
+              "text": "@notice 根据属性与等级计算装备战力\n@param level 等级\n@param mainAttrs 属性"
+            },
+            "functionSelector": "465a6cfe",
+            "id": 13249,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calcPower",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13245,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13241,
+                  "mutability": "mutable",
+                  "name": "level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13249,
+                  "src": "881:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13240,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "881:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13244,
+                  "mutability": "mutable",
+                  "name": "mainAttrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13249,
+                  "src": "895:26:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_MainAttrs_$11087_memory_ptr",
+                    "typeString": "struct MainAttrs"
+                  },
+                  "typeName": {
+                    "id": 13243,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13242,
+                      "name": "MainAttrs",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11087,
+                      "src": "895:9:14"
+                    },
+                    "referencedDeclaration": 11087,
+                    "src": "895:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_MainAttrs_$11087_storage_ptr",
+                      "typeString": "struct MainAttrs"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "880:42:14"
+            },
+            "returnParameters": {
+              "id": 13248,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13247,
+                  "mutability": "mutable",
+                  "name": "power",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13249,
+                  "src": "946:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13246,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "946:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "945:14:14"
+            },
+            "scope": 13296,
+            "src": "862:98:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "426676fb",
+            "id": 13256,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEquipMaxLevel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13250,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1053:2:14"
+            },
+            "returnParameters": {
+              "id": 13255,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13254,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13256,
+                  "src": "1079:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint32_$3_memory_ptr",
+                    "typeString": "uint32[3]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13251,
+                      "name": "uint32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1079:6:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 13253,
+                    "length": {
+                      "hexValue": "33",
+                      "id": 13252,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1086:1:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_3_by_1",
+                        "typeString": "int_const 3"
+                      },
+                      "value": "3"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "1079:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint32_$3_storage_ptr",
+                      "typeString": "uint32[3]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1078:18:14"
+            },
+            "scope": 13296,
+            "src": "1028:69:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13257,
+              "nodeType": "StructuredDocumentation",
+              "src": "1103:98:14",
+              "text": "@notice 生成装备\n@param number 装备编号\n@param quality 装备品质"
+            },
+            "functionSelector": "b8fea24b",
+            "id": 13267,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEquipmentInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13262,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13259,
+                  "mutability": "mutable",
+                  "name": "number",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13267,
+                  "src": "1232:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13258,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1232:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13261,
+                  "mutability": "mutable",
+                  "name": "quality",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13267,
+                  "src": "1247:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 13260,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1247:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1231:30:14"
+            },
+            "returnParameters": {
+              "id": 13266,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13265,
+                  "mutability": "mutable",
+                  "name": "attrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13267,
+                  "src": "1285:26:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_EquipmentAttr_$11153_memory_ptr",
+                    "typeString": "struct EquipmentAttr"
+                  },
+                  "typeName": {
+                    "id": 13264,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13263,
+                      "name": "EquipmentAttr",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11153,
+                      "src": "1285:13:14"
+                    },
+                    "referencedDeclaration": 11153,
+                    "src": "1285:13:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_EquipmentAttr_$11153_storage_ptr",
+                      "typeString": "struct EquipmentAttr"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1284:28:14"
+            },
+            "scope": 13296,
+            "src": "1206:107:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13268,
+              "nodeType": "StructuredDocumentation",
+              "src": "1319:191:14",
+              "text": "@notice 在给定的编号范围中随机出装备\n@param quality 品质\n@param equipmentIds 装备编号范围列表\n@param seed 出现多个时随机用的种子"
+            },
+            "functionSelector": "296bfa58",
+            "id": 13281,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "searchEquipment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13276,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13270,
+                  "mutability": "mutable",
+                  "name": "quality",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13281,
+                  "src": "1549:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 13269,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1549:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13273,
+                  "mutability": "mutable",
+                  "name": "equipmentIds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13281,
+                  "src": "1572:30:14",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint32_$dyn_calldata_ptr",
+                    "typeString": "uint32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13271,
+                      "name": "uint32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1572:6:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 13272,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1572:8:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint32_$dyn_storage_ptr",
+                      "typeString": "uint32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13275,
+                  "mutability": "mutable",
+                  "name": "seed",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13281,
+                  "src": "1612:19:14",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 13274,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1612:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1539:98:14"
+            },
+            "returnParameters": {
+              "id": 13280,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13279,
+                  "mutability": "mutable",
+                  "name": "equipment",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13281,
+                  "src": "1661:30:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_EquipmentAttr_$11153_memory_ptr",
+                    "typeString": "struct EquipmentAttr"
+                  },
+                  "typeName": {
+                    "id": 13278,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13277,
+                      "name": "EquipmentAttr",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11153,
+                      "src": "1661:13:14"
+                    },
+                    "referencedDeclaration": 11153,
+                    "src": "1661:13:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_EquipmentAttr_$11153_storage_ptr",
+                      "typeString": "struct EquipmentAttr"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1660:32:14"
+            },
+            "scope": 13296,
+            "src": "1515:178:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13282,
+              "nodeType": "StructuredDocumentation",
+              "src": "1699:165:14",
+              "text": "@notice 获取装备强化属性区间\n@param level 等级区间\n@param quality 装备品质\n@param universal 是否为职业通用装备"
+            },
+            "functionSelector": "a8be9ca1",
+            "id": 13295,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getIncreaseConfig",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13289,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13284,
+                  "mutability": "mutable",
+                  "name": "level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13295,
+                  "src": "1905:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13283,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1905:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13286,
+                  "mutability": "mutable",
+                  "name": "quality",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13295,
+                  "src": "1928:15:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13285,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1928:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13288,
+                  "mutability": "mutable",
+                  "name": "universal",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13295,
+                  "src": "1953:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 13287,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1953:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1895:78:14"
+            },
+            "returnParameters": {
+              "id": 13294,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13293,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13295,
+                  "src": "1997:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint32_$2_memory_ptr",
+                    "typeString": "uint32[2]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13290,
+                      "name": "uint32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1997:6:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 13292,
+                    "length": {
+                      "hexValue": "32",
+                      "id": 13291,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2004:1:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
+                      },
+                      "value": "2"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "1997:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint32_$2_storage_ptr",
+                      "typeString": "uint32[2]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1996:18:14"
+            },
+            "scope": 13296,
+            "src": "1869:146:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13297,
+        "src": "91:1926:14"
+      }
+    ],
+    "src": "0:2018:14"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/include/IConfig.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IConfig": [
+        13296
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 13297,
+    "license": "Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13213,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:14"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13214,
+        "nodeType": "ImportDirective",
+        "scope": 13297,
+        "sourceUnit": 11177,
+        "src": "65:24:14",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13296,
+        "linearizedBaseContracts": [
+          13296
+        ],
+        "name": "IConfig",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 13215,
+              "nodeType": "StructuredDocumentation",
+              "src": "115:51:14",
+              "text": "The highest possible hero level"
+            },
+            "functionSelector": "cc06c359",
+            "id": 13220,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "maxLevel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13216,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "188:2:14"
+            },
+            "returnParameters": {
+              "id": 13219,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13218,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13220,
+                  "src": "214:6:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13217,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "214:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "213:8:14"
+            },
+            "scope": 13296,
+            "src": "171:51:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13221,
+              "nodeType": "StructuredDocumentation",
+              "src": "228:153:14",
+              "text": "@notice Get information about supported currencies\n@param tokenType Index of currencies that can be used to create heroes    "
+            },
+            "functionSelector": "cbd90cd0",
+            "id": 13229,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTokenInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13224,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13223,
+                  "mutability": "mutable",
+                  "name": "tokenType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13229,
+                  "src": "408:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13222,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "408:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "407:18:14"
+            },
+            "returnParameters": {
+              "id": 13228,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13227,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13229,
+                  "src": "449:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TokenInfo_$11063_memory_ptr",
+                    "typeString": "struct TokenInfo"
+                  },
+                  "typeName": {
+                    "id": 13226,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13225,
+                      "name": "TokenInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11063,
+                      "src": "449:9:14"
+                    },
+                    "referencedDeclaration": 11063,
+                    "src": "449:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TokenInfo_$11063_storage_ptr",
+                      "typeString": "struct TokenInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:18:14"
+            },
+            "scope": 13296,
+            "src": "386:81:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13230,
+              "nodeType": "StructuredDocumentation",
+              "src": "473:160:14",
+              "text": "@notice Array subscript meaning: [hp,mp,defense, magicDefense, attack, magic, taoism, time, exp]\n@param level the hero current level"
+            },
+            "functionSelector": "1ea49196",
+            "id": 13238,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLevelInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13233,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13232,
+                  "mutability": "mutable",
+                  "name": "level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13238,
+                  "src": "660:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13231,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "660:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "659:14:14"
+            },
+            "returnParameters": {
+              "id": 13237,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13236,
+                  "mutability": "mutable",
+                  "name": "levelInfo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13238,
+                  "src": "697:26:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_LevelInfo_$11165_memory_ptr",
+                    "typeString": "struct LevelInfo"
+                  },
+                  "typeName": {
+                    "id": 13235,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13234,
+                      "name": "LevelInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11165,
+                      "src": "697:9:14"
+                    },
+                    "referencedDeclaration": 11165,
+                    "src": "697:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_LevelInfo_$11165_storage_ptr",
+                      "typeString": "struct LevelInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "696:28:14"
+            },
+            "scope": 13296,
+            "src": "638:87:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13239,
+              "nodeType": "StructuredDocumentation",
+              "src": "731:126:14",
+              "text": "@notice 根据属性与等级计算装备战力\n@param level 等级\n@param mainAttrs 属性"
+            },
+            "functionSelector": "465a6cfe",
+            "id": 13249,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calcPower",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13245,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13241,
+                  "mutability": "mutable",
+                  "name": "level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13249,
+                  "src": "881:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13240,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "881:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13244,
+                  "mutability": "mutable",
+                  "name": "mainAttrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13249,
+                  "src": "895:26:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_MainAttrs_$11087_memory_ptr",
+                    "typeString": "struct MainAttrs"
+                  },
+                  "typeName": {
+                    "id": 13243,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13242,
+                      "name": "MainAttrs",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11087,
+                      "src": "895:9:14"
+                    },
+                    "referencedDeclaration": 11087,
+                    "src": "895:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_MainAttrs_$11087_storage_ptr",
+                      "typeString": "struct MainAttrs"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "880:42:14"
+            },
+            "returnParameters": {
+              "id": 13248,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13247,
+                  "mutability": "mutable",
+                  "name": "power",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13249,
+                  "src": "946:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13246,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "946:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "945:14:14"
+            },
+            "scope": 13296,
+            "src": "862:98:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "426676fb",
+            "id": 13256,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEquipMaxLevel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13250,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1053:2:14"
+            },
+            "returnParameters": {
+              "id": 13255,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13254,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13256,
+                  "src": "1079:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint32_$3_memory_ptr",
+                    "typeString": "uint32[3]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13251,
+                      "name": "uint32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1079:6:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 13253,
+                    "length": {
+                      "hexValue": "33",
+                      "id": 13252,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1086:1:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_3_by_1",
+                        "typeString": "int_const 3"
+                      },
+                      "value": "3"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "1079:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint32_$3_storage_ptr",
+                      "typeString": "uint32[3]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1078:18:14"
+            },
+            "scope": 13296,
+            "src": "1028:69:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13257,
+              "nodeType": "StructuredDocumentation",
+              "src": "1103:98:14",
+              "text": "@notice 生成装备\n@param number 装备编号\n@param quality 装备品质"
+            },
+            "functionSelector": "b8fea24b",
+            "id": 13267,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEquipmentInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13262,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13259,
+                  "mutability": "mutable",
+                  "name": "number",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13267,
+                  "src": "1232:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13258,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1232:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13261,
+                  "mutability": "mutable",
+                  "name": "quality",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13267,
+                  "src": "1247:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 13260,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1247:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1231:30:14"
+            },
+            "returnParameters": {
+              "id": 13266,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13265,
+                  "mutability": "mutable",
+                  "name": "attrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13267,
+                  "src": "1285:26:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_EquipmentAttr_$11153_memory_ptr",
+                    "typeString": "struct EquipmentAttr"
+                  },
+                  "typeName": {
+                    "id": 13264,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13263,
+                      "name": "EquipmentAttr",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11153,
+                      "src": "1285:13:14"
+                    },
+                    "referencedDeclaration": 11153,
+                    "src": "1285:13:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_EquipmentAttr_$11153_storage_ptr",
+                      "typeString": "struct EquipmentAttr"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1284:28:14"
+            },
+            "scope": 13296,
+            "src": "1206:107:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13268,
+              "nodeType": "StructuredDocumentation",
+              "src": "1319:191:14",
+              "text": "@notice 在给定的编号范围中随机出装备\n@param quality 品质\n@param equipmentIds 装备编号范围列表\n@param seed 出现多个时随机用的种子"
+            },
+            "functionSelector": "296bfa58",
+            "id": 13281,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "searchEquipment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13276,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13270,
+                  "mutability": "mutable",
+                  "name": "quality",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13281,
+                  "src": "1549:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 13269,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1549:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13273,
+                  "mutability": "mutable",
+                  "name": "equipmentIds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13281,
+                  "src": "1572:30:14",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint32_$dyn_calldata_ptr",
+                    "typeString": "uint32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13271,
+                      "name": "uint32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1572:6:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 13272,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1572:8:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint32_$dyn_storage_ptr",
+                      "typeString": "uint32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13275,
+                  "mutability": "mutable",
+                  "name": "seed",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13281,
+                  "src": "1612:19:14",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 13274,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1612:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1539:98:14"
+            },
+            "returnParameters": {
+              "id": 13280,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13279,
+                  "mutability": "mutable",
+                  "name": "equipment",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13281,
+                  "src": "1661:30:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_EquipmentAttr_$11153_memory_ptr",
+                    "typeString": "struct EquipmentAttr"
+                  },
+                  "typeName": {
+                    "id": 13278,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13277,
+                      "name": "EquipmentAttr",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11153,
+                      "src": "1661:13:14"
+                    },
+                    "referencedDeclaration": 11153,
+                    "src": "1661:13:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_EquipmentAttr_$11153_storage_ptr",
+                      "typeString": "struct EquipmentAttr"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1660:32:14"
+            },
+            "scope": 13296,
+            "src": "1515:178:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13282,
+              "nodeType": "StructuredDocumentation",
+              "src": "1699:165:14",
+              "text": "@notice 获取装备强化属性区间\n@param level 等级区间\n@param quality 装备品质\n@param universal 是否为职业通用装备"
+            },
+            "functionSelector": "a8be9ca1",
+            "id": 13295,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getIncreaseConfig",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13289,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13284,
+                  "mutability": "mutable",
+                  "name": "level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13295,
+                  "src": "1905:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13283,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1905:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13286,
+                  "mutability": "mutable",
+                  "name": "quality",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13295,
+                  "src": "1928:15:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13285,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1928:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13288,
+                  "mutability": "mutable",
+                  "name": "universal",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13295,
+                  "src": "1953:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 13287,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1953:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1895:78:14"
+            },
+            "returnParameters": {
+              "id": 13294,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13293,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13295,
+                  "src": "1997:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint32_$2_memory_ptr",
+                    "typeString": "uint32[2]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13290,
+                      "name": "uint32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1997:6:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 13292,
+                    "length": {
+                      "hexValue": "32",
+                      "id": 13291,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2004:1:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
+                      },
+                      "value": "2"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "1997:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint32_$2_storage_ptr",
+                      "typeString": "uint32[2]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1996:18:14"
+            },
+            "scope": 13296,
+            "src": "1869:146:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13297,
+        "src": "91:1926:14"
+      }
+    ],
+    "src": "0:2018:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Darwin.appleclang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-03-25T17:05:56.801Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "calcPower(uint32,(uint32,uint32,uint32,uint32,uint32,uint32,uint32))": {
+        "params": {
+          "level": "等级",
+          "mainAttrs": "属性"
+        }
+      },
+      "getEquipmentInfo(uint32,uint8)": {
+        "params": {
+          "number": "装备编号",
+          "quality": "装备品质"
+        }
+      },
+      "getIncreaseConfig(uint256,uint256,bool)": {
+        "params": {
+          "level": "等级区间",
+          "quality": "装备品质",
+          "universal": "是否为职业通用装备"
+        }
+      },
+      "getLevelInfo(uint32)": {
+        "params": {
+          "level": "the hero current level"
+        }
+      },
+      "getTokenInfo(uint32)": {
+        "params": {
+          "tokenType": "Index of currencies that can be used to create heroes    "
+        }
+      },
+      "searchEquipment(uint8,uint32[],bytes)": {
+        "params": {
+          "equipmentIds": "装备编号范围列表",
+          "quality": "品质",
+          "seed": "出现多个时随机用的种子"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "calcPower(uint32,(uint32,uint32,uint32,uint32,uint32,uint32,uint32))": {
+        "notice": "根据属性与等级计算装备战力"
+      },
+      "getEquipmentInfo(uint32,uint8)": {
+        "notice": "生成装备"
+      },
+      "getIncreaseConfig(uint256,uint256,bool)": {
+        "notice": "获取装备强化属性区间"
+      },
+      "getLevelInfo(uint32)": {
+        "notice": "Array subscript meaning: [hp,mp,defense, magicDefense, attack, magic, taoism, time, exp]"
+      },
+      "getTokenInfo(uint32)": {
+        "notice": "Get information about supported currencies"
+      },
+      "maxLevel()": {
+        "notice": "The highest possible hero level"
+      },
+      "searchEquipment(uint8,uint32[],bytes)": {
+        "notice": "在给定的编号范围中随机出装备"
+      }
+    },
+    "version": 1
+  }
+}

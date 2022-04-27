@@ -1,0 +1,351 @@
+{
+  "contractName": "IStoreOP",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "quantity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"quantity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/necklace/work/Legend/Legend/contracts/include/IStoreOP.sol\":\"IStoreOP\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/necklace/work/Legend/Legend/contracts/include/IStoreOP.sol\":{\"keccak256\":\"0x1ad824de160394461d010d04b07075dae0d3ee2f6920a2bbd4f116b5951b7f70\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://86c132d63eb1a9a16727be0fb1bd11e061c3eb428961147d524c3801348e045e\",\"dweb:/ipfs/QmVaGZzqgCL5UeC1QvogHuPV94B9Z7yTa2acPEo4Z1cKCT\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n//商店用NFT铸造接口\ninterface IStoreOP {\n    function mint(\n        address to,\n        uint256 quantity,\n        bytes calldata data\n    ) external;\n}\n",
+  "sourcePath": "/Users/necklace/work/Legend/Legend/contracts/include/IStoreOP.sol",
+  "ast": {
+    "absolutePath": "/Users/necklace/work/Legend/Legend/contracts/include/IStoreOP.sol",
+    "exportedSymbols": {
+      "IStoreOP": [
+        11779
+      ]
+    },
+    "id": 11780,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11769,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:36"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 11779,
+        "linearizedBaseContracts": [
+          11779
+        ],
+        "name": "IStoreOP",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "94d008ef",
+            "id": 11778,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11776,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11771,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11778,
+                  "src": "132:10:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11770,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "132:7:36",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11773,
+                  "mutability": "mutable",
+                  "name": "quantity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11778,
+                  "src": "152:16:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11772,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11775,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11778,
+                  "src": "178:19:36",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 11774,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "178:5:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "122:81:36"
+            },
+            "returnParameters": {
+              "id": 11777,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "212:0:36"
+            },
+            "scope": 11779,
+            "src": "109:104:36",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11780,
+        "src": "84:131:36"
+      }
+    ],
+    "src": "32:184:36"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/necklace/work/Legend/Legend/contracts/include/IStoreOP.sol",
+    "exportedSymbols": {
+      "IStoreOP": [
+        11779
+      ]
+    },
+    "id": 11780,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11769,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:36"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 11779,
+        "linearizedBaseContracts": [
+          11779
+        ],
+        "name": "IStoreOP",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "94d008ef",
+            "id": 11778,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11776,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11771,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11778,
+                  "src": "132:10:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11770,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "132:7:36",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11773,
+                  "mutability": "mutable",
+                  "name": "quantity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11778,
+                  "src": "152:16:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11772,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11775,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11778,
+                  "src": "178:19:36",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 11774,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "178:5:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "122:81:36"
+            },
+            "returnParameters": {
+              "id": 11777,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "212:0:36"
+            },
+            "scope": 11779,
+            "src": "109:104:36",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11780,
+        "src": "84:131:36"
+      }
+    ],
+    "src": "32:184:36"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Darwin.appleclang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.0",
+  "updatedAt": "2021-05-11T13:41:58.861Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

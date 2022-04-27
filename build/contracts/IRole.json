@@ -1,0 +1,2995 @@
+{
+  "contractName": "IRole",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getRoleId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "roleId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "time",
+          "type": "uint256"
+        }
+      ],
+      "name": "inMine",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "time",
+          "type": "uint256"
+        }
+      ],
+      "name": "inZone",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "exp",
+          "type": "uint32"
+        }
+      ],
+      "name": "stopWorking",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint8",
+          "name": "gender",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "profession",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint32",
+          "name": "tokenType",
+          "type": "uint32"
+        }
+      ],
+      "name": "create",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "heroId",
+          "type": "uint256"
+        }
+      ],
+      "name": "packet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "heroId",
+          "type": "uint256"
+        }
+      ],
+      "name": "activation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "heroId",
+          "type": "uint256"
+        }
+      ],
+      "name": "upgrade",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "heroId",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getHeroInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "status",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint64",
+              "name": "startTime",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint32",
+              "name": "time",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct CurrentHero",
+          "name": "hero",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "profession",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "gender",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint32",
+              "name": "exp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "upExp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "level",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "power",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "equipmentSlot",
+              "type": "uint256[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "attack",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "taoism",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magic",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "defense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicDefense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "physicalPower",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicPower",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct MainAttrs",
+              "name": "mainAttrs",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct HeroAttrs",
+          "name": "attrs",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getHeroInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "status",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint64",
+              "name": "startTime",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint32",
+              "name": "time",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct CurrentHero",
+          "name": "hero",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "profession",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "gender",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint32",
+              "name": "exp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "upExp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "level",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "power",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "equipmentSlot",
+              "type": "uint256[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "attack",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "taoism",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magic",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "defense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicDefense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "physicalPower",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicPower",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct MainAttrs",
+              "name": "mainAttrs",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct HeroAttrs",
+          "name": "attrs",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "roleAddr",
+          "type": "address"
+        }
+      ],
+      "name": "getHeroPower",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "power",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "heroId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "newIds",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "equip",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"heroId\",\"type\":\"uint256\"}],\"name\":\"activation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"heroId\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"gender\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"profession\",\"type\":\"uint8\"},{\"internalType\":\"uint32\",\"name\":\"tokenType\",\"type\":\"uint32\"}],\"name\":\"create\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"heroId\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"newIds\",\"type\":\"uint256[]\"}],\"name\":\"equip\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"getHeroInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"uint64\",\"name\":\"startTime\",\"type\":\"uint64\"},{\"internalType\":\"uint32\",\"name\":\"time\",\"type\":\"uint32\"}],\"internalType\":\"struct CurrentHero\",\"name\":\"hero\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint8\",\"name\":\"profession\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"gender\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint32\",\"name\":\"exp\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"upExp\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"},{\"internalType\":\"uint256[]\",\"name\":\"equipmentSlot\",\"type\":\"uint256[]\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"attack\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"taoism\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magic\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"defense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicDefense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"physicalPower\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicPower\",\"type\":\"uint32\"}],\"internalType\":\"struct MainAttrs\",\"name\":\"mainAttrs\",\"type\":\"tuple\"}],\"internalType\":\"struct HeroAttrs\",\"name\":\"attrs\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getHeroInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"uint64\",\"name\":\"startTime\",\"type\":\"uint64\"},{\"internalType\":\"uint32\",\"name\":\"time\",\"type\":\"uint32\"}],\"internalType\":\"struct CurrentHero\",\"name\":\"hero\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint8\",\"name\":\"profession\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"gender\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint32\",\"name\":\"exp\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"upExp\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"},{\"internalType\":\"uint256[]\",\"name\":\"equipmentSlot\",\"type\":\"uint256[]\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"attack\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"taoism\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magic\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"defense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicDefense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"physicalPower\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicPower\",\"type\":\"uint32\"}],\"internalType\":\"struct MainAttrs\",\"name\":\"mainAttrs\",\"type\":\"tuple\"}],\"internalType\":\"struct HeroAttrs\",\"name\":\"attrs\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"roleAddr\",\"type\":\"address\"}],\"name\":\"getHeroPower\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getRoleId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"roleId\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"time\",\"type\":\"uint256\"}],\"name\":\"inMine\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"time\",\"type\":\"uint256\"}],\"name\":\"inZone\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"heroId\",\"type\":\"uint256\"}],\"name\":\"packet\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"exp\",\"type\":\"uint32\"}],\"name\":\"stopWorking\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"heroId\",\"type\":\"uint256\"}],\"name\":\"upgrade\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"create(string,uint8,uint8,uint32)\":{\"params\":{\"gender\":\"\\u6027\\u522b\",\"name\":\"\\u89d2\\u8272\\u540d\",\"profession\":\"\\u804c\\u4e1a\",\"tokenType\":\"\\u521b\\u5efa\\u65f6\\u6240\\u6709token\\u7c7b\\u578b(1.USDT,2.LGC)\"}},\"equip(uint256,uint256[])\":{\"params\":{\"heroId\":\"\\u89d2\\u8272id\",\"newIds\":\"\\u65b0\\u88c5\\u5907\\u4e0a\\u7684\\u88c5\\u5907id \\u6570\\u7ec4\"}},\"getHeroInfo(uint256)\":{\"params\":{\"id\":\"\\u89d2\\u8272id\"}},\"getHeroPower(address)\":{\"params\":{\"roleAddr\":\"\\u89d2\\u8272\\u7ed1\\u5b9a\\u7684\\u5730\\u5740(\\u64cd\\u4f5c\\u4eba\\u5730\\u5740)\"}},\"getRoleId(address)\":{\"params\":{\"user\":\"\\u89d2\\u8272\\u6240\\u6709\\u8005\\u5730\\u5740\"}},\"inMine(address,uint256)\":{\"params\":{\"time\":\"\\u8fdb\\u5165\\u7684\\u65f6\\u95f4(\\u5c0f\\u65f6)\",\"user\":\"\\u89d2\\u8272\\u6240\\u6709\\u8005\\u5730\\u5740\"}},\"inZone(address,uint256)\":{\"params\":{\"time\":\"\\u8fdb\\u5165\\u7684\\u65f6\\u95f4(\\u5c0f\\u65f6)\",\"user\":\"\\u89d2\\u8272\\u6240\\u6709\\u8005\\u5730\\u5740\"}},\"stopWorking(address,uint32)\":{\"params\":{\"exp\":\"\\u83b7\\u5f97\\u7684\\u7ecf\\u9a8c\",\"user\":\"\\u89d2\\u8272\\u6240\\u6709\\u8005\\u5730\\u5740\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"create(string,uint8,uint8,uint32)\":{\"notice\":\"\\u521b\\u5efa\\u89d2\\u8272\"},\"equip(uint256,uint256[])\":{\"notice\":\"\\u66f4\\u65b0\\u88c5\\u5907\\u4e3a\\u88c5\\u5907\"},\"getHeroInfo(uint256)\":{\"notice\":\"\\u83b7\\u53d6\\u89d2\\u8272\\u4fe1\\u606f\"},\"getHeroPower(address)\":{\"notice\":\"\\u83b7\\u53d6\\u89d2\\u8272\\u6218\\u529b(\\u5fc5\\u987b\\u4e3a\\u5f53\\u524d\\u7ed1\\u5b9a\\u89d2\\u8272)\"},\"getRoleId(address)\":{\"notice\":\"\\u83b7\\u53d6\\u89d2\\u8272id\"},\"inMine(address,uint256)\":{\"notice\":\"\\u8fdb\\u5165\\u77ff\\u6d1e\"},\"inZone(address,uint256)\":{\"notice\":\"\\u8fdb\\u5165\\u526f\\u672c\"},\"stopWorking(address,uint32)\":{\"notice\":\"\\u9000\\u51fa\\u77ff\\u6d1e\\u6216\\u8005\\u526f\\u672c\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/include/IRole.sol\":\"IRole\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Structs.sol\":{\"keccak256\":\"0xf2869eeb09a8b799b5af2736f969390543d0f91ab4a1c7d3369e7457a48a2b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a7307d23f005394dfaa029d9a7624cb673078bdc10c58eb1fd2d2173278c5329\",\"dweb:/ipfs/QmXHvvC7zr2F1DnFKpFAr8aURZdkEisBqgWhnTEU4WdK35\"]},\"project:/contracts/include/IRole.sol\":{\"keccak256\":\"0x8bbbd971cbe61199141b9ade7a77a70249e9b9be899e1ae0429559b32a9a9d4d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1be3325bb8227fd93f55872a47f8f58a6b0c32903bc2c4b31256b5d1e75c9048\",\"dweb:/ipfs/Qmevxj9JwKav9XStC8nMmgKd3DuVx55GVix3WV8zWHrw2w\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\n\n// SPDX-License-Identifier: MIT\n\nimport \"../Structs.sol\";\n\ninterface IRole {\n    /**\n    @notice 获取角色id\n    @param user 角色所有者地址\n     */\n    function getRoleId(address user) external view returns (uint256 roleId);\n\n    /**\n    @notice 进入矿洞\n    @param user 角色所有者地址\n    @param time 进入的时间(小时)\n     */\n    function inMine(address user, uint256 time) external;\n\n    /**\n    @notice 进入副本\n    @param user 角色所有者地址\n    @param time 进入的时间(小时)\n     */\n    function inZone(address user, uint256 time) external;\n\n    /**\n    @notice 退出矿洞或者副本\n    @param user 角色所有者地址\n    @param exp 获得的经验\n     */\n    function stopWorking(address user, uint32 exp) external;\n\n    /**\n    @notice 创建角色\n    @param name 角色名\n    @param gender 性别\n    @param profession 职业\n    @param tokenType 创建时所有token类型(1.USDT,2.LGC)\n     */\n    function create(\n        string calldata name,\n        uint8 gender,\n        uint8 profession,\n        uint32 tokenType\n    ) external payable;\n\n    function packet(uint256 heroId) external;\n\n    function activation(uint256 heroId) external;\n\n    function upgrade(uint256 heroId) external;\n\n    function burn(uint256 heroId) external;\n\n    /**\n    @notice 获取角色信息\n    @param id 角色id\n     */\n    function getHeroInfo(uint256 id) external view returns (CurrentHero memory hero, HeroAttrs memory attrs);\n    function getHeroInfo(address addr) external view returns (CurrentHero memory hero, HeroAttrs memory attrs);\n\n    /**\n    @notice 获取角色战力(必须为当前绑定角色)\n    @param roleAddr 角色绑定的地址(操作人地址)\n     */\n    function getHeroPower(address roleAddr) external view returns(uint32 power);\n\n    /**\n    @notice 更新装备为装备\n    @param heroId 角色id\n    @param newIds 新装备上的装备id 数组\n    */\n    function equip(uint256 heroId, uint256[] calldata newIds) external;\n}\n",
+  "sourcePath": "/Users/necklace/work/Legend/Legend/contracts/include/IRole.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/include/IRole.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IRole": [
+        14012
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 14013,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13906,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:34"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13907,
+        "nodeType": "ImportDirective",
+        "scope": 14013,
+        "sourceUnit": 11177,
+        "src": "58:24:34",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 14012,
+        "linearizedBaseContracts": [
+          14012
+        ],
+        "name": "IRole",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 13908,
+              "nodeType": "StructuredDocumentation",
+              "src": "106:76:34",
+              "text": "@notice 获取角色id\n@param user 角色所有者地址"
+            },
+            "functionSelector": "18392f64",
+            "id": 13915,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRoleId",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13911,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13910,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13915,
+                  "src": "206:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13909,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "206:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "205:14:34"
+            },
+            "returnParameters": {
+              "id": 13914,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13913,
+                  "mutability": "mutable",
+                  "name": "roleId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13915,
+                  "src": "243:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13912,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "242:16:34"
+            },
+            "scope": 14012,
+            "src": "187:72:34",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13916,
+              "nodeType": "StructuredDocumentation",
+              "src": "265:114:34",
+              "text": "@notice 进入矿洞\n@param user 角色所有者地址\n@param time 进入的时间(小时)"
+            },
+            "functionSelector": "381e8d71",
+            "id": 13923,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "inMine",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13921,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13918,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13923,
+                  "src": "400:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13917,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "400:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13920,
+                  "mutability": "mutable",
+                  "name": "time",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13923,
+                  "src": "414:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13919,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "414:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "399:28:34"
+            },
+            "returnParameters": {
+              "id": 13922,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "436:0:34"
+            },
+            "scope": 14012,
+            "src": "384:53:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13924,
+              "nodeType": "StructuredDocumentation",
+              "src": "443:114:34",
+              "text": "@notice 进入副本\n@param user 角色所有者地址\n@param time 进入的时间(小时)"
+            },
+            "functionSelector": "f168a9c7",
+            "id": 13931,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "inZone",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13929,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13926,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13931,
+                  "src": "578:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13925,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "578:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13928,
+                  "mutability": "mutable",
+                  "name": "time",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13931,
+                  "src": "592:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13927,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "592:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "577:28:34"
+            },
+            "returnParameters": {
+              "id": 13930,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "614:0:34"
+            },
+            "scope": 14012,
+            "src": "562:53:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13932,
+              "nodeType": "StructuredDocumentation",
+              "src": "621:117:34",
+              "text": "@notice 退出矿洞或者副本\n@param user 角色所有者地址\n@param exp 获得的经验"
+            },
+            "functionSelector": "f23a4331",
+            "id": 13939,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stopWorking",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13937,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13934,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13939,
+                  "src": "764:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13933,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "764:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13936,
+                  "mutability": "mutable",
+                  "name": "exp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13939,
+                  "src": "778:10:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13935,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "778:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "763:26:34"
+            },
+            "returnParameters": {
+              "id": 13938,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "798:0:34"
+            },
+            "scope": 14012,
+            "src": "743:56:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13940,
+              "nodeType": "StructuredDocumentation",
+              "src": "805:178:34",
+              "text": "@notice 创建角色\n@param name 角色名\n@param gender 性别\n@param profession 职业\n@param tokenType 创建时所有token类型(1.USDT,2.LGC)"
+            },
+            "functionSelector": "02fbf92d",
+            "id": 13951,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "create",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13949,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13942,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13951,
+                  "src": "1013:20:34",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 13941,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1013:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13944,
+                  "mutability": "mutable",
+                  "name": "gender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13951,
+                  "src": "1043:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 13943,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1043:5:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13946,
+                  "mutability": "mutable",
+                  "name": "profession",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13951,
+                  "src": "1065:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 13945,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1065:5:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13948,
+                  "mutability": "mutable",
+                  "name": "tokenType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13951,
+                  "src": "1091:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13947,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1091:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1003:110:34"
+            },
+            "returnParameters": {
+              "id": 13950,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1130:0:34"
+            },
+            "scope": 14012,
+            "src": "988:143:34",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "d29b6818",
+            "id": 13956,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "packet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13954,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13953,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13956,
+                  "src": "1153:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13952,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1153:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1152:16:34"
+            },
+            "returnParameters": {
+              "id": 13955,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1177:0:34"
+            },
+            "scope": 14012,
+            "src": "1137:41:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "77b02a38",
+            "id": 13961,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "activation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13959,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13958,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13961,
+                  "src": "1204:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13957,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1204:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1203:16:34"
+            },
+            "returnParameters": {
+              "id": 13960,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1228:0:34"
+            },
+            "scope": 14012,
+            "src": "1184:45:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "45977d03",
+            "id": 13966,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgrade",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13964,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13963,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13966,
+                  "src": "1252:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13962,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1252:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1251:16:34"
+            },
+            "returnParameters": {
+              "id": 13965,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1276:0:34"
+            },
+            "scope": 14012,
+            "src": "1235:42:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "42966c68",
+            "id": 13971,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13969,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13968,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13971,
+                  "src": "1297:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13967,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1297:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1296:16:34"
+            },
+            "returnParameters": {
+              "id": 13970,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1321:0:34"
+            },
+            "scope": 14012,
+            "src": "1283:39:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13972,
+              "nodeType": "StructuredDocumentation",
+              "src": "1328:65:34",
+              "text": "@notice 获取角色信息\n@param id 角色id"
+            },
+            "functionSelector": "75e39f26",
+            "id": 13983,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHeroInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13975,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13974,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13983,
+                  "src": "1419:10:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13973,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1419:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1418:12:34"
+            },
+            "returnParameters": {
+              "id": 13982,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13978,
+                  "mutability": "mutable",
+                  "name": "hero",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13983,
+                  "src": "1454:23:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_CurrentHero_$11072_memory_ptr",
+                    "typeString": "struct CurrentHero"
+                  },
+                  "typeName": {
+                    "id": 13977,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13976,
+                      "name": "CurrentHero",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11072,
+                      "src": "1454:11:34"
+                    },
+                    "referencedDeclaration": 11072,
+                    "src": "1454:11:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CurrentHero_$11072_storage_ptr",
+                      "typeString": "struct CurrentHero"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13981,
+                  "mutability": "mutable",
+                  "name": "attrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13983,
+                  "src": "1479:22:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_HeroAttrs_$11108_memory_ptr",
+                    "typeString": "struct HeroAttrs"
+                  },
+                  "typeName": {
+                    "id": 13980,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13979,
+                      "name": "HeroAttrs",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11108,
+                      "src": "1479:9:34"
+                    },
+                    "referencedDeclaration": 11108,
+                    "src": "1479:9:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_HeroAttrs_$11108_storage_ptr",
+                      "typeString": "struct HeroAttrs"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1453:49:34"
+            },
+            "scope": 14012,
+            "src": "1398:105:34",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "839ddba8",
+            "id": 13994,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHeroInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13986,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13985,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13994,
+                  "src": "1529:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13984,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1529:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1528:14:34"
+            },
+            "returnParameters": {
+              "id": 13993,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13989,
+                  "mutability": "mutable",
+                  "name": "hero",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13994,
+                  "src": "1566:23:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_CurrentHero_$11072_memory_ptr",
+                    "typeString": "struct CurrentHero"
+                  },
+                  "typeName": {
+                    "id": 13988,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13987,
+                      "name": "CurrentHero",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11072,
+                      "src": "1566:11:34"
+                    },
+                    "referencedDeclaration": 11072,
+                    "src": "1566:11:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CurrentHero_$11072_storage_ptr",
+                      "typeString": "struct CurrentHero"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13992,
+                  "mutability": "mutable",
+                  "name": "attrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13994,
+                  "src": "1591:22:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_HeroAttrs_$11108_memory_ptr",
+                    "typeString": "struct HeroAttrs"
+                  },
+                  "typeName": {
+                    "id": 13991,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13990,
+                      "name": "HeroAttrs",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11108,
+                      "src": "1591:9:34"
+                    },
+                    "referencedDeclaration": 11108,
+                    "src": "1591:9:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_HeroAttrs_$11108_storage_ptr",
+                      "typeString": "struct HeroAttrs"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1565:49:34"
+            },
+            "scope": 14012,
+            "src": "1508:107:34",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13995,
+              "nodeType": "StructuredDocumentation",
+              "src": "1621:130:34",
+              "text": "@notice 获取角色战力(必须为当前绑定角色)\n@param roleAddr 角色绑定的地址(操作人地址)"
+            },
+            "functionSelector": "a36f3432",
+            "id": 14002,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHeroPower",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13998,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13997,
+                  "mutability": "mutable",
+                  "name": "roleAddr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14002,
+                  "src": "1778:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13996,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1778:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1777:18:34"
+            },
+            "returnParameters": {
+              "id": 14001,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14000,
+                  "mutability": "mutable",
+                  "name": "power",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14002,
+                  "src": "1818:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13999,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1818:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1817:14:34"
+            },
+            "scope": 14012,
+            "src": "1756:76:34",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 14003,
+              "nodeType": "StructuredDocumentation",
+              "src": "1838:120:34",
+              "text": "@notice 更新装备为装备\n@param heroId 角色id\n@param newIds 新装备上的装备id 数组"
+            },
+            "functionSelector": "f85ac9a6",
+            "id": 14011,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "equip",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 14009,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14005,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14011,
+                  "src": "1978:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14004,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1978:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14008,
+                  "mutability": "mutable",
+                  "name": "newIds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14011,
+                  "src": "1994:25:34",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 14006,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1994:7:34",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 14007,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1994:9:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1977:43:34"
+            },
+            "returnParameters": {
+              "id": 14010,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2029:0:34"
+            },
+            "scope": 14012,
+            "src": "1963:67:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 14013,
+        "src": "84:1948:34"
+      }
+    ],
+    "src": "0:2033:34"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/include/IRole.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IRole": [
+        14012
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 14013,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13906,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:34"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13907,
+        "nodeType": "ImportDirective",
+        "scope": 14013,
+        "sourceUnit": 11177,
+        "src": "58:24:34",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 14012,
+        "linearizedBaseContracts": [
+          14012
+        ],
+        "name": "IRole",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 13908,
+              "nodeType": "StructuredDocumentation",
+              "src": "106:76:34",
+              "text": "@notice 获取角色id\n@param user 角色所有者地址"
+            },
+            "functionSelector": "18392f64",
+            "id": 13915,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRoleId",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13911,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13910,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13915,
+                  "src": "206:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13909,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "206:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "205:14:34"
+            },
+            "returnParameters": {
+              "id": 13914,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13913,
+                  "mutability": "mutable",
+                  "name": "roleId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13915,
+                  "src": "243:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13912,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "242:16:34"
+            },
+            "scope": 14012,
+            "src": "187:72:34",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13916,
+              "nodeType": "StructuredDocumentation",
+              "src": "265:114:34",
+              "text": "@notice 进入矿洞\n@param user 角色所有者地址\n@param time 进入的时间(小时)"
+            },
+            "functionSelector": "381e8d71",
+            "id": 13923,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "inMine",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13921,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13918,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13923,
+                  "src": "400:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13917,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "400:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13920,
+                  "mutability": "mutable",
+                  "name": "time",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13923,
+                  "src": "414:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13919,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "414:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "399:28:34"
+            },
+            "returnParameters": {
+              "id": 13922,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "436:0:34"
+            },
+            "scope": 14012,
+            "src": "384:53:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13924,
+              "nodeType": "StructuredDocumentation",
+              "src": "443:114:34",
+              "text": "@notice 进入副本\n@param user 角色所有者地址\n@param time 进入的时间(小时)"
+            },
+            "functionSelector": "f168a9c7",
+            "id": 13931,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "inZone",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13929,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13926,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13931,
+                  "src": "578:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13925,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "578:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13928,
+                  "mutability": "mutable",
+                  "name": "time",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13931,
+                  "src": "592:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13927,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "592:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "577:28:34"
+            },
+            "returnParameters": {
+              "id": 13930,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "614:0:34"
+            },
+            "scope": 14012,
+            "src": "562:53:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13932,
+              "nodeType": "StructuredDocumentation",
+              "src": "621:117:34",
+              "text": "@notice 退出矿洞或者副本\n@param user 角色所有者地址\n@param exp 获得的经验"
+            },
+            "functionSelector": "f23a4331",
+            "id": 13939,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stopWorking",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13937,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13934,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13939,
+                  "src": "764:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13933,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "764:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13936,
+                  "mutability": "mutable",
+                  "name": "exp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13939,
+                  "src": "778:10:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13935,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "778:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "763:26:34"
+            },
+            "returnParameters": {
+              "id": 13938,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "798:0:34"
+            },
+            "scope": 14012,
+            "src": "743:56:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13940,
+              "nodeType": "StructuredDocumentation",
+              "src": "805:178:34",
+              "text": "@notice 创建角色\n@param name 角色名\n@param gender 性别\n@param profession 职业\n@param tokenType 创建时所有token类型(1.USDT,2.LGC)"
+            },
+            "functionSelector": "02fbf92d",
+            "id": 13951,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "create",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13949,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13942,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13951,
+                  "src": "1013:20:34",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 13941,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1013:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13944,
+                  "mutability": "mutable",
+                  "name": "gender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13951,
+                  "src": "1043:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 13943,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1043:5:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13946,
+                  "mutability": "mutable",
+                  "name": "profession",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13951,
+                  "src": "1065:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 13945,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1065:5:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13948,
+                  "mutability": "mutable",
+                  "name": "tokenType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13951,
+                  "src": "1091:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13947,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1091:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1003:110:34"
+            },
+            "returnParameters": {
+              "id": 13950,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1130:0:34"
+            },
+            "scope": 14012,
+            "src": "988:143:34",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "d29b6818",
+            "id": 13956,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "packet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13954,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13953,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13956,
+                  "src": "1153:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13952,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1153:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1152:16:34"
+            },
+            "returnParameters": {
+              "id": 13955,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1177:0:34"
+            },
+            "scope": 14012,
+            "src": "1137:41:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "77b02a38",
+            "id": 13961,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "activation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13959,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13958,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13961,
+                  "src": "1204:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13957,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1204:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1203:16:34"
+            },
+            "returnParameters": {
+              "id": 13960,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1228:0:34"
+            },
+            "scope": 14012,
+            "src": "1184:45:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "45977d03",
+            "id": 13966,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgrade",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13964,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13963,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13966,
+                  "src": "1252:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13962,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1252:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1251:16:34"
+            },
+            "returnParameters": {
+              "id": 13965,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1276:0:34"
+            },
+            "scope": 14012,
+            "src": "1235:42:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "42966c68",
+            "id": 13971,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13969,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13968,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13971,
+                  "src": "1297:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13967,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1297:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1296:16:34"
+            },
+            "returnParameters": {
+              "id": 13970,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1321:0:34"
+            },
+            "scope": 14012,
+            "src": "1283:39:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13972,
+              "nodeType": "StructuredDocumentation",
+              "src": "1328:65:34",
+              "text": "@notice 获取角色信息\n@param id 角色id"
+            },
+            "functionSelector": "75e39f26",
+            "id": 13983,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHeroInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13975,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13974,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13983,
+                  "src": "1419:10:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13973,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1419:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1418:12:34"
+            },
+            "returnParameters": {
+              "id": 13982,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13978,
+                  "mutability": "mutable",
+                  "name": "hero",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13983,
+                  "src": "1454:23:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_CurrentHero_$11072_memory_ptr",
+                    "typeString": "struct CurrentHero"
+                  },
+                  "typeName": {
+                    "id": 13977,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13976,
+                      "name": "CurrentHero",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11072,
+                      "src": "1454:11:34"
+                    },
+                    "referencedDeclaration": 11072,
+                    "src": "1454:11:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CurrentHero_$11072_storage_ptr",
+                      "typeString": "struct CurrentHero"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13981,
+                  "mutability": "mutable",
+                  "name": "attrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13983,
+                  "src": "1479:22:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_HeroAttrs_$11108_memory_ptr",
+                    "typeString": "struct HeroAttrs"
+                  },
+                  "typeName": {
+                    "id": 13980,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13979,
+                      "name": "HeroAttrs",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11108,
+                      "src": "1479:9:34"
+                    },
+                    "referencedDeclaration": 11108,
+                    "src": "1479:9:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_HeroAttrs_$11108_storage_ptr",
+                      "typeString": "struct HeroAttrs"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1453:49:34"
+            },
+            "scope": 14012,
+            "src": "1398:105:34",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "839ddba8",
+            "id": 13994,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHeroInfo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13986,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13985,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13994,
+                  "src": "1529:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13984,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1529:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1528:14:34"
+            },
+            "returnParameters": {
+              "id": 13993,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13989,
+                  "mutability": "mutable",
+                  "name": "hero",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13994,
+                  "src": "1566:23:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_CurrentHero_$11072_memory_ptr",
+                    "typeString": "struct CurrentHero"
+                  },
+                  "typeName": {
+                    "id": 13988,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13987,
+                      "name": "CurrentHero",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11072,
+                      "src": "1566:11:34"
+                    },
+                    "referencedDeclaration": 11072,
+                    "src": "1566:11:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CurrentHero_$11072_storage_ptr",
+                      "typeString": "struct CurrentHero"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13992,
+                  "mutability": "mutable",
+                  "name": "attrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13994,
+                  "src": "1591:22:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_HeroAttrs_$11108_memory_ptr",
+                    "typeString": "struct HeroAttrs"
+                  },
+                  "typeName": {
+                    "id": 13991,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13990,
+                      "name": "HeroAttrs",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11108,
+                      "src": "1591:9:34"
+                    },
+                    "referencedDeclaration": 11108,
+                    "src": "1591:9:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_HeroAttrs_$11108_storage_ptr",
+                      "typeString": "struct HeroAttrs"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1565:49:34"
+            },
+            "scope": 14012,
+            "src": "1508:107:34",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13995,
+              "nodeType": "StructuredDocumentation",
+              "src": "1621:130:34",
+              "text": "@notice 获取角色战力(必须为当前绑定角色)\n@param roleAddr 角色绑定的地址(操作人地址)"
+            },
+            "functionSelector": "a36f3432",
+            "id": 14002,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHeroPower",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13998,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13997,
+                  "mutability": "mutable",
+                  "name": "roleAddr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14002,
+                  "src": "1778:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13996,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1778:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1777:18:34"
+            },
+            "returnParameters": {
+              "id": 14001,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14000,
+                  "mutability": "mutable",
+                  "name": "power",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14002,
+                  "src": "1818:12:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13999,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1818:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1817:14:34"
+            },
+            "scope": 14012,
+            "src": "1756:76:34",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 14003,
+              "nodeType": "StructuredDocumentation",
+              "src": "1838:120:34",
+              "text": "@notice 更新装备为装备\n@param heroId 角色id\n@param newIds 新装备上的装备id 数组"
+            },
+            "functionSelector": "f85ac9a6",
+            "id": 14011,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "equip",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 14009,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14005,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14011,
+                  "src": "1978:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14004,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1978:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14008,
+                  "mutability": "mutable",
+                  "name": "newIds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14011,
+                  "src": "1994:25:34",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 14006,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1994:7:34",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 14007,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1994:9:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1977:43:34"
+            },
+            "returnParameters": {
+              "id": 14010,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2029:0:34"
+            },
+            "scope": 14012,
+            "src": "1963:67:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 14013,
+        "src": "84:1948:34"
+      }
+    ],
+    "src": "0:2033:34"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Darwin.appleclang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-03-25T17:05:56.808Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "create(string,uint8,uint8,uint32)": {
+        "params": {
+          "gender": "性别",
+          "name": "角色名",
+          "profession": "职业",
+          "tokenType": "创建时所有token类型(1.USDT,2.LGC)"
+        }
+      },
+      "equip(uint256,uint256[])": {
+        "params": {
+          "heroId": "角色id",
+          "newIds": "新装备上的装备id 数组"
+        }
+      },
+      "getHeroInfo(uint256)": {
+        "params": {
+          "id": "角色id"
+        }
+      },
+      "getHeroPower(address)": {
+        "params": {
+          "roleAddr": "角色绑定的地址(操作人地址)"
+        }
+      },
+      "getRoleId(address)": {
+        "params": {
+          "user": "角色所有者地址"
+        }
+      },
+      "inMine(address,uint256)": {
+        "params": {
+          "time": "进入的时间(小时)",
+          "user": "角色所有者地址"
+        }
+      },
+      "inZone(address,uint256)": {
+        "params": {
+          "time": "进入的时间(小时)",
+          "user": "角色所有者地址"
+        }
+      },
+      "stopWorking(address,uint32)": {
+        "params": {
+          "exp": "获得的经验",
+          "user": "角色所有者地址"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "create(string,uint8,uint8,uint32)": {
+        "notice": "创建角色"
+      },
+      "equip(uint256,uint256[])": {
+        "notice": "更新装备为装备"
+      },
+      "getHeroInfo(uint256)": {
+        "notice": "获取角色信息"
+      },
+      "getHeroPower(address)": {
+        "notice": "获取角色战力(必须为当前绑定角色)"
+      },
+      "getRoleId(address)": {
+        "notice": "获取角色id"
+      },
+      "inMine(address,uint256)": {
+        "notice": "进入矿洞"
+      },
+      "inZone(address,uint256)": {
+        "notice": "进入副本"
+      },
+      "stopWorking(address,uint32)": {
+        "notice": "退出矿洞或者副本"
+      }
+    },
+    "version": 1
+  }
+}

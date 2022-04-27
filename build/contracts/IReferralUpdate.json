@@ -1,0 +1,294 @@
+{
+  "contractName": "IReferralUpdate",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateConsume",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"userAddr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"updateConsume\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/necklace/work/Legend/Legend/contracts/include/IReferralUpdate.sol\":\"IReferralUpdate\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/necklace/work/Legend/Legend/contracts/include/IReferralUpdate.sol\":{\"keccak256\":\"0xfad98f78083a4cdaf9f59ecc555779b741d129ce24b43fd6c9b2b5c930d55e72\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dae93e90e20bbd96a3f93cc88f5620a89a85da237fd4d4fb53528bf47c8e0b79\",\"dweb:/ipfs/QmSpkVthsDodqdL1t6vsgkS6iFqLd5DPvTwdpkLozwsEu3\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\n\n// SPDX-License-Identifier: MIT\n\ninterface IReferralUpdate {\n    //更新消费\n    function updateConsume(address userAddr, uint256 amount) external;\n}\n",
+  "sourcePath": "/Users/necklace/work/Legend/Legend/contracts/include/IReferralUpdate.sol",
+  "ast": {
+    "absolutePath": "/Users/necklace/work/Legend/Legend/contracts/include/IReferralUpdate.sol",
+    "exportedSymbols": {
+      "IReferralUpdate": [
+        13913
+      ]
+    },
+    "id": 13914,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13905,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:33"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13913,
+        "linearizedBaseContracts": [
+          13913
+        ],
+        "name": "IReferralUpdate",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "9812cf42",
+            "id": 13912,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateConsume",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13910,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13907,
+                  "mutability": "mutable",
+                  "name": "userAddr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13912,
+                  "src": "132:16:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13906,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "132:7:33",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13909,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13912,
+                  "src": "150:14:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13908,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "131:34:33"
+            },
+            "returnParameters": {
+              "id": 13911,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "174:0:33"
+            },
+            "scope": 13913,
+            "src": "109:66:33",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13914,
+        "src": "58:119:33"
+      }
+    ],
+    "src": "0:178:33"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/necklace/work/Legend/Legend/contracts/include/IReferralUpdate.sol",
+    "exportedSymbols": {
+      "IReferralUpdate": [
+        13913
+      ]
+    },
+    "id": 13914,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13905,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:33"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13913,
+        "linearizedBaseContracts": [
+          13913
+        ],
+        "name": "IReferralUpdate",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "9812cf42",
+            "id": 13912,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateConsume",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13910,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13907,
+                  "mutability": "mutable",
+                  "name": "userAddr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13912,
+                  "src": "132:16:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13906,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "132:7:33",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13909,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13912,
+                  "src": "150:14:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13908,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "131:34:33"
+            },
+            "returnParameters": {
+              "id": 13911,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "174:0:33"
+            },
+            "scope": 13913,
+            "src": "109:66:33",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13914,
+        "src": "58:119:33"
+      }
+    ],
+    "src": "0:178:33"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Darwin.appleclang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.0",
+  "updatedAt": "2021-06-18T16:25:12.048Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

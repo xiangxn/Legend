@@ -1,0 +1,331 @@
+{
+  "contractName": "IERC1155Metadata",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "uri",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"uri\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"uri(uint256)\":{\"details\":\"URIs are defined in RFC 3986. The URI may point to a JSON file that conforms to the \\\"ERC-1155 Metadata URI JSON Schema\\\".\",\"returns\":{\"_0\":\"URI string\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"uri(uint256)\":{\"notice\":\"A distinct Uniform Resource Identifier (URI) for a given token.\"}},\"notice\":\"Note: The ERC-165 identifier for this interface is 0x0e89341c.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/necklace/work/Legend/Legend/contracts/include/IERC1155Metadata.sol\":\"IERC1155Metadata\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/necklace/work/Legend/Legend/contracts/include/IERC1155Metadata.sol\":{\"keccak256\":\"0xde26694e5a8d4fd7021ad972ddbbe84a2fd263c930ea298f57cba61faa99fd10\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://075972fe1765f5e4a78dd5e8c452c7d0c2e1b1b1d8267732df8c8cbc0c706632\",\"dweb:/ipfs/QmVWamA6Ej4RPQSgeq9zV4fwBxT1tnUYYXPY2bXRk1i6h7\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\n\n// SPDX-License-Identifier: Apache-2.0\n\n/**\n    Note: The ERC-165 identifier for this interface is 0x0e89341c.\n*/\ninterface IERC1155Metadata {\n    /**\n        @notice A distinct Uniform Resource Identifier (URI) for a given token.\n        @dev URIs are defined in RFC 3986.\n        The URI may point to a JSON file that conforms to the \"ERC-1155 Metadata URI JSON Schema\".\n        @return URI string\n    */\n    function uri(uint256 _id) external view returns (string memory);\n}\n",
+  "sourcePath": "/Users/necklace/work/Legend/Legend/contracts/include/IERC1155Metadata.sol",
+  "ast": {
+    "absolutePath": "/Users/necklace/work/Legend/Legend/contracts/include/IERC1155Metadata.sol",
+    "exportedSymbols": {
+      "IERC1155Metadata": [
+        11124
+      ]
+    },
+    "id": 11125,
+    "license": "Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11114,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:18"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 11115,
+          "nodeType": "StructuredDocumentation",
+          "src": "65:73:18",
+          "text": "Note: The ERC-165 identifier for this interface is 0x0e89341c."
+        },
+        "fullyImplemented": false,
+        "id": 11124,
+        "linearizedBaseContracts": [
+          11124
+        ],
+        "name": "IERC1155Metadata",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 11116,
+              "nodeType": "StructuredDocumentation",
+              "src": "172:259:18",
+              "text": "@notice A distinct Uniform Resource Identifier (URI) for a given token.\n@dev URIs are defined in RFC 3986.\nThe URI may point to a JSON file that conforms to the \"ERC-1155 Metadata URI JSON Schema\".\n@return URI string"
+            },
+            "functionSelector": "0e89341c",
+            "id": 11123,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "uri",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11119,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11118,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11123,
+                  "src": "449:11:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11117,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:13:18"
+            },
+            "returnParameters": {
+              "id": 11122,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11121,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11123,
+                  "src": "485:13:18",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 11120,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "485:6:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "484:15:18"
+            },
+            "scope": 11124,
+            "src": "436:64:18",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11125,
+        "src": "139:363:18"
+      }
+    ],
+    "src": "0:503:18"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/necklace/work/Legend/Legend/contracts/include/IERC1155Metadata.sol",
+    "exportedSymbols": {
+      "IERC1155Metadata": [
+        11124
+      ]
+    },
+    "id": 11125,
+    "license": "Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11114,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:18"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 11115,
+          "nodeType": "StructuredDocumentation",
+          "src": "65:73:18",
+          "text": "Note: The ERC-165 identifier for this interface is 0x0e89341c."
+        },
+        "fullyImplemented": false,
+        "id": 11124,
+        "linearizedBaseContracts": [
+          11124
+        ],
+        "name": "IERC1155Metadata",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 11116,
+              "nodeType": "StructuredDocumentation",
+              "src": "172:259:18",
+              "text": "@notice A distinct Uniform Resource Identifier (URI) for a given token.\n@dev URIs are defined in RFC 3986.\nThe URI may point to a JSON file that conforms to the \"ERC-1155 Metadata URI JSON Schema\".\n@return URI string"
+            },
+            "functionSelector": "0e89341c",
+            "id": 11123,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "uri",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11119,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11118,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11123,
+                  "src": "449:11:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11117,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:7:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:13:18"
+            },
+            "returnParameters": {
+              "id": 11122,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11121,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11123,
+                  "src": "485:13:18",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 11120,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "485:6:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "484:15:18"
+            },
+            "scope": 11124,
+            "src": "436:64:18",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11125,
+        "src": "139:363:18"
+      }
+    ],
+    "src": "0:503:18"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Darwin.appleclang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.0",
+  "updatedAt": "2021-05-11T13:41:58.850Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "uri(uint256)": {
+        "details": "URIs are defined in RFC 3986. The URI may point to a JSON file that conforms to the \"ERC-1155 Metadata URI JSON Schema\".",
+        "returns": {
+          "_0": "URI string"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "uri(uint256)": {
+        "notice": "A distinct Uniform Resource Identifier (URI) for a given token."
+      }
+    },
+    "notice": "Note: The ERC-165 identifier for this interface is 0x0e89341c.",
+    "version": 1
+  }
+}

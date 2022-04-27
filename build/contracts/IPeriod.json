@@ -1,0 +1,685 @@
+{
+  "contractName": "IPeriod",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "number",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPeriodFragment",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "fType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint32",
+              "name": "number",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastFragmentCount",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokens",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct FragmentInfo[]",
+          "name": "fragmentInfos",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "fType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint32",
+              "name": "number",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastFragmentCount",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokens",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct FragmentInfo",
+          "name": "fi",
+          "type": "tuple"
+        }
+      ],
+      "name": "updateFragment",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getPeriodFragment\",\"outputs\":[{\"components\":[{\"internalType\":\"uint8\",\"name\":\"fType\",\"type\":\"uint8\"},{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"},{\"internalType\":\"uint32\",\"name\":\"number\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"lastFragmentCount\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"internalType\":\"struct FragmentInfo[]\",\"name\":\"fragmentInfos\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"number\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint8\",\"name\":\"fType\",\"type\":\"uint8\"},{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"},{\"internalType\":\"uint32\",\"name\":\"number\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"lastFragmentCount\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"internalType\":\"struct FragmentInfo\",\"name\":\"fi\",\"type\":\"tuple\"}],\"name\":\"updateFragment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/include/IPeriod.sol\":\"IPeriod\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Structs.sol\":{\"keccak256\":\"0xf2869eeb09a8b799b5af2736f969390543d0f91ab4a1c7d3369e7457a48a2b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a7307d23f005394dfaa029d9a7624cb673078bdc10c58eb1fd2d2173278c5329\",\"dweb:/ipfs/QmXHvvC7zr2F1DnFKpFAr8aURZdkEisBqgWhnTEU4WdK35\"]},\"project:/contracts/include/IPeriod.sol\":{\"keccak256\":\"0xa53fbcd34ba5a6d1879bd3ed0e7c822c6a7ac432e8566ae85c63b10c3ff78677\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c32c70c8b0729987046e061a27816522350ee379730d466d5070b0a9075119f\",\"dweb:/ipfs/QmfCChXwTubsfnTom1LYLdYeYJ9fHLTg7u8U65moZYnkQt\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\nimport \"../Structs.sol\";\n\ninterface IPeriod {\n    function number() external view returns(uint32);\n    function getPeriodFragment() external view returns (FragmentInfo[] memory fragmentInfos);\n    function updateFragment(FragmentInfo calldata fi) external;\n}\n",
+  "sourcePath": "/Users/necklace/work/Legend/Legend/contracts/include/IPeriod.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/include/IPeriod.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IPeriod": [
+        13865
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 13866,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13845,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:30"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13846,
+        "nodeType": "ImportDirective",
+        "scope": 13866,
+        "sourceUnit": 11177,
+        "src": "58:24:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13865,
+        "linearizedBaseContracts": [
+          13865
+        ],
+        "name": "IPeriod",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8381f58a",
+            "id": 13851,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "number",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13847,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "123:2:30"
+            },
+            "returnParameters": {
+              "id": 13850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13849,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13851,
+                  "src": "148:6:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13848,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "148:6:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "147:8:30"
+            },
+            "scope": 13865,
+            "src": "108:48:30",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "8f8ae9c9",
+            "id": 13858,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPeriodFragment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13852,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "187:2:30"
+            },
+            "returnParameters": {
+              "id": 13857,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13856,
+                  "mutability": "mutable",
+                  "name": "fragmentInfos",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13858,
+                  "src": "213:35:30",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_FragmentInfo_$11176_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct FragmentInfo[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13854,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 13853,
+                        "name": "FragmentInfo",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 11176,
+                        "src": "213:12:30"
+                      },
+                      "referencedDeclaration": 11176,
+                      "src": "213:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_FragmentInfo_$11176_storage_ptr",
+                        "typeString": "struct FragmentInfo"
+                      }
+                    },
+                    "id": 13855,
+                    "nodeType": "ArrayTypeName",
+                    "src": "213:14:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_FragmentInfo_$11176_storage_$dyn_storage_ptr",
+                      "typeString": "struct FragmentInfo[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "212:37:30"
+            },
+            "scope": 13865,
+            "src": "161:89:30",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "80b07ed9",
+            "id": 13864,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateFragment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13862,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13861,
+                  "mutability": "mutable",
+                  "name": "fi",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13864,
+                  "src": "279:24:30",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_FragmentInfo_$11176_calldata_ptr",
+                    "typeString": "struct FragmentInfo"
+                  },
+                  "typeName": {
+                    "id": 13860,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13859,
+                      "name": "FragmentInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11176,
+                      "src": "279:12:30"
+                    },
+                    "referencedDeclaration": 11176,
+                    "src": "279:12:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_FragmentInfo_$11176_storage_ptr",
+                      "typeString": "struct FragmentInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "278:26:30"
+            },
+            "returnParameters": {
+              "id": 13863,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "313:0:30"
+            },
+            "scope": 13865,
+            "src": "255:59:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13866,
+        "src": "84:232:30"
+      }
+    ],
+    "src": "33:284:30"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/include/IPeriod.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IPeriod": [
+        13865
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 13866,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13845,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:30"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13846,
+        "nodeType": "ImportDirective",
+        "scope": 13866,
+        "sourceUnit": 11177,
+        "src": "58:24:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13865,
+        "linearizedBaseContracts": [
+          13865
+        ],
+        "name": "IPeriod",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8381f58a",
+            "id": 13851,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "number",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13847,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "123:2:30"
+            },
+            "returnParameters": {
+              "id": 13850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13849,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13851,
+                  "src": "148:6:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13848,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "148:6:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "147:8:30"
+            },
+            "scope": 13865,
+            "src": "108:48:30",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "8f8ae9c9",
+            "id": 13858,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPeriodFragment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13852,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "187:2:30"
+            },
+            "returnParameters": {
+              "id": 13857,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13856,
+                  "mutability": "mutable",
+                  "name": "fragmentInfos",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13858,
+                  "src": "213:35:30",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_FragmentInfo_$11176_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct FragmentInfo[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13854,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 13853,
+                        "name": "FragmentInfo",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 11176,
+                        "src": "213:12:30"
+                      },
+                      "referencedDeclaration": 11176,
+                      "src": "213:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_FragmentInfo_$11176_storage_ptr",
+                        "typeString": "struct FragmentInfo"
+                      }
+                    },
+                    "id": 13855,
+                    "nodeType": "ArrayTypeName",
+                    "src": "213:14:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_FragmentInfo_$11176_storage_$dyn_storage_ptr",
+                      "typeString": "struct FragmentInfo[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "212:37:30"
+            },
+            "scope": 13865,
+            "src": "161:89:30",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "80b07ed9",
+            "id": 13864,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateFragment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13862,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13861,
+                  "mutability": "mutable",
+                  "name": "fi",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13864,
+                  "src": "279:24:30",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_FragmentInfo_$11176_calldata_ptr",
+                    "typeString": "struct FragmentInfo"
+                  },
+                  "typeName": {
+                    "id": 13860,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13859,
+                      "name": "FragmentInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11176,
+                      "src": "279:12:30"
+                    },
+                    "referencedDeclaration": 11176,
+                    "src": "279:12:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_FragmentInfo_$11176_storage_ptr",
+                      "typeString": "struct FragmentInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "278:26:30"
+            },
+            "returnParameters": {
+              "id": 13863,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "313:0:30"
+            },
+            "scope": 13865,
+            "src": "255:59:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13866,
+        "src": "84:232:30"
+      }
+    ],
+    "src": "33:284:30"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Darwin.appleclang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-03-25T17:05:56.807Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

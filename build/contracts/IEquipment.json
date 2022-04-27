@@ -1,0 +1,1322 @@
+{
+  "contractName": "IEquipment",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "number",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "profession",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "category",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "quality",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool",
+              "name": "locked",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isEquip",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokens",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "power",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "level",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "increaseCount",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "increaseMax",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "suitId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "suitNumber",
+              "type": "uint32"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "attack",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "taoism",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magic",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "defense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicDefense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "physicalPower",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicPower",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct MainAttrs",
+              "name": "mainAttrs",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct EquipmentAttr",
+          "name": "attr",
+          "type": "tuple"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "level",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "newIds",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "oldIds",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "equip",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "power",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getEquipment",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "number",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "profession",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "category",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "quality",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool",
+              "name": "locked",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isEquip",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokens",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "power",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "level",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "increaseCount",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "increaseMax",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "suitId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "suitNumber",
+              "type": "uint32"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "attack",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "taoism",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magic",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "defense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicDefense",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "physicalPower",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "magicPower",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct MainAttrs",
+              "name": "mainAttrs",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct EquipmentAttr",
+          "name": "attrs",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"},{\"internalType\":\"uint256[]\",\"name\":\"newIds\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"oldIds\",\"type\":\"uint256[]\"}],\"name\":\"equip\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getEquipment\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"number\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"profession\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"category\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"quality\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"locked\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"isEquip\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"increaseCount\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"increaseMax\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"suitId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"suitNumber\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"attack\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"taoism\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magic\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"defense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicDefense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"physicalPower\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicPower\",\"type\":\"uint32\"}],\"internalType\":\"struct MainAttrs\",\"name\":\"mainAttrs\",\"type\":\"tuple\"}],\"internalType\":\"struct EquipmentAttr\",\"name\":\"attrs\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"number\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"profession\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"category\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"quality\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"locked\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"isEquip\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"power\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"level\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"increaseCount\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"increaseMax\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"suitId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"suitNumber\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"attack\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"taoism\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magic\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"defense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicDefense\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"physicalPower\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"magicPower\",\"type\":\"uint32\"}],\"internalType\":\"struct MainAttrs\",\"name\":\"mainAttrs\",\"type\":\"tuple\"}],\"internalType\":\"struct EquipmentAttr\",\"name\":\"attr\",\"type\":\"tuple\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"equip(address,uint32,uint256[],uint256[])\":{\"params\":{\"level\":\"\\u89d2\\u8272\\u5f53\\u524d\\u7b49\\u7ea7\",\"newIds\":\"\\u65b0\\u88c5\\u5907\\u4e0a\\u7684\\u88c5\\u5907id \\u6570\\u7ec4\",\"oldIds\":\"\\u4e4b\\u524d\\u88c5\\u5907\\u4e0a\\u7684\\u88c5\\u5907id\\u6570\\u7ec4\",\"operator\":\"\\u64cd\\u4f5c\\u8005\\u5730\\u5740\"}},\"mint(address,(uint32,uint8,uint8,uint8,bool,bool,uint256,uint32,uint32,uint32,uint32,uint32,uint32,(uint32,uint32,uint32,uint32,uint32,uint32,uint32)))\":{\"params\":{\"attr\":\"\\u88c5\\u5907\\u5c5e\\u6027\",\"to\":\"\\u76ee\\u6807\\u5730\\u5740\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"equip(address,uint32,uint256[],uint256[])\":{\"notice\":\"\\u66f4\\u65b0\\u88c5\\u5907\\u4e3a\\u88c5\\u5907\\u72b6\\u6001\"},\"mint(address,(uint32,uint8,uint8,uint8,bool,bool,uint256,uint32,uint32,uint32,uint32,uint32,uint32,(uint32,uint32,uint32,uint32,uint32,uint32,uint32)))\":{\"notice\":\"\\u53d1\\u884c\\u88c5\\u5907\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/include/IEquipment.sol\":\"IEquipment\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Structs.sol\":{\"keccak256\":\"0xf2869eeb09a8b799b5af2736f969390543d0f91ab4a1c7d3369e7457a48a2b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a7307d23f005394dfaa029d9a7624cb673078bdc10c58eb1fd2d2173278c5329\",\"dweb:/ipfs/QmXHvvC7zr2F1DnFKpFAr8aURZdkEisBqgWhnTEU4WdK35\"]},\"project:/contracts/include/IEquipment.sol\":{\"keccak256\":\"0x0b2f42b646b26753f3b9372fc73adc066fd8ffa68afd248c6c81f05e5a85b538\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c8c299bc0c48ca3b06c0b9f0791619784f965690650a93fee246c1c4e7c8a924\",\"dweb:/ipfs/QmQX6MrUfD4HSRw2PaP9UHTfA3nampRes329GCEkMkpn6X\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\n\n// SPDX-License-Identifier: MIT\n\nimport \"../Structs.sol\";\n\ninterface IEquipment {\n    /**\n    @notice 发行装备\n    @param to 目标地址\n    @param attr 装备属性\n    */\n    function mint(address to, EquipmentAttr memory attr) external;\n\n    /**\n    @notice 更新装备为装备状态\n    @param operator 操作者地址\n    @param level 角色当前等级\n    @param newIds 新装备上的装备id 数组\n    @param oldIds 之前装备上的装备id数组\n    */\n    function equip(\n        address operator,\n        uint32 level,\n        uint256[] calldata newIds,\n        uint256[] calldata oldIds\n    ) external returns(uint32 power);\n\n    function getEquipment(uint256 tokenId) external view returns (uint256 id, EquipmentAttr memory attrs);\n}\n",
+  "sourcePath": "/Users/necklace/work/Legend/Legend/contracts/include/IEquipment.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/include/IEquipment.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IEquipment": [
+        13816
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 13817,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13779,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:27"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13780,
+        "nodeType": "ImportDirective",
+        "scope": 13817,
+        "sourceUnit": 11177,
+        "src": "58:24:27",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13816,
+        "linearizedBaseContracts": [
+          13816
+        ],
+        "name": "IEquipment",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 13781,
+              "nodeType": "StructuredDocumentation",
+              "src": "111:91:27",
+              "text": "@notice 发行装备\n@param to 目标地址\n@param attr 装备属性"
+            },
+            "functionSelector": "803a763a",
+            "id": 13789,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13787,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13783,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13789,
+                  "src": "221:10:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13782,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "221:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13786,
+                  "mutability": "mutable",
+                  "name": "attr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13789,
+                  "src": "233:25:27",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_EquipmentAttr_$11153_memory_ptr",
+                    "typeString": "struct EquipmentAttr"
+                  },
+                  "typeName": {
+                    "id": 13785,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13784,
+                      "name": "EquipmentAttr",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11153,
+                      "src": "233:13:27"
+                    },
+                    "referencedDeclaration": 11153,
+                    "src": "233:13:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_EquipmentAttr_$11153_storage_ptr",
+                      "typeString": "struct EquipmentAttr"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "220:39:27"
+            },
+            "returnParameters": {
+              "id": 13788,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "268:0:27"
+            },
+            "scope": 13816,
+            "src": "207:62:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13790,
+              "nodeType": "StructuredDocumentation",
+              "src": "275:222:27",
+              "text": "@notice 更新装备为装备状态\n@param operator 操作者地址\n@param level 角色当前等级\n@param newIds 新装备上的装备id 数组\n@param oldIds 之前装备上的装备id数组"
+            },
+            "functionSelector": "94db160b",
+            "id": 13805,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "equip",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13801,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13792,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "526:16:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13791,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "526:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13794,
+                  "mutability": "mutable",
+                  "name": "level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "552:12:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13793,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "552:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13797,
+                  "mutability": "mutable",
+                  "name": "newIds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "574:25:27",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13795,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "574:7:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 13796,
+                    "nodeType": "ArrayTypeName",
+                    "src": "574:9:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13800,
+                  "mutability": "mutable",
+                  "name": "oldIds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "609:25:27",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13798,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "609:7:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 13799,
+                    "nodeType": "ArrayTypeName",
+                    "src": "609:9:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "516:124:27"
+            },
+            "returnParameters": {
+              "id": 13804,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13803,
+                  "mutability": "mutable",
+                  "name": "power",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "658:12:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13802,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "658:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "657:14:27"
+            },
+            "scope": 13816,
+            "src": "502:170:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "81dd2fa0",
+            "id": 13815,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEquipment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13808,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13807,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13815,
+                  "src": "700:15:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13806,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "700:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "699:17:27"
+            },
+            "returnParameters": {
+              "id": 13814,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13810,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13815,
+                  "src": "740:10:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13809,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "740:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13813,
+                  "mutability": "mutable",
+                  "name": "attrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13815,
+                  "src": "752:26:27",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_EquipmentAttr_$11153_memory_ptr",
+                    "typeString": "struct EquipmentAttr"
+                  },
+                  "typeName": {
+                    "id": 13812,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13811,
+                      "name": "EquipmentAttr",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11153,
+                      "src": "752:13:27"
+                    },
+                    "referencedDeclaration": 11153,
+                    "src": "752:13:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_EquipmentAttr_$11153_storage_ptr",
+                      "typeString": "struct EquipmentAttr"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "739:40:27"
+            },
+            "scope": 13816,
+            "src": "678:102:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13817,
+        "src": "84:698:27"
+      }
+    ],
+    "src": "0:783:27"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/include/IEquipment.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IEquipment": [
+        13816
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 13817,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13779,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:27"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13780,
+        "nodeType": "ImportDirective",
+        "scope": 13817,
+        "sourceUnit": 11177,
+        "src": "58:24:27",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13816,
+        "linearizedBaseContracts": [
+          13816
+        ],
+        "name": "IEquipment",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 13781,
+              "nodeType": "StructuredDocumentation",
+              "src": "111:91:27",
+              "text": "@notice 发行装备\n@param to 目标地址\n@param attr 装备属性"
+            },
+            "functionSelector": "803a763a",
+            "id": 13789,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13787,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13783,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13789,
+                  "src": "221:10:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13782,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "221:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13786,
+                  "mutability": "mutable",
+                  "name": "attr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13789,
+                  "src": "233:25:27",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_EquipmentAttr_$11153_memory_ptr",
+                    "typeString": "struct EquipmentAttr"
+                  },
+                  "typeName": {
+                    "id": 13785,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13784,
+                      "name": "EquipmentAttr",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11153,
+                      "src": "233:13:27"
+                    },
+                    "referencedDeclaration": 11153,
+                    "src": "233:13:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_EquipmentAttr_$11153_storage_ptr",
+                      "typeString": "struct EquipmentAttr"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "220:39:27"
+            },
+            "returnParameters": {
+              "id": 13788,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "268:0:27"
+            },
+            "scope": 13816,
+            "src": "207:62:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 13790,
+              "nodeType": "StructuredDocumentation",
+              "src": "275:222:27",
+              "text": "@notice 更新装备为装备状态\n@param operator 操作者地址\n@param level 角色当前等级\n@param newIds 新装备上的装备id 数组\n@param oldIds 之前装备上的装备id数组"
+            },
+            "functionSelector": "94db160b",
+            "id": 13805,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "equip",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13801,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13792,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "526:16:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13791,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "526:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13794,
+                  "mutability": "mutable",
+                  "name": "level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "552:12:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13793,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "552:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13797,
+                  "mutability": "mutable",
+                  "name": "newIds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "574:25:27",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13795,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "574:7:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 13796,
+                    "nodeType": "ArrayTypeName",
+                    "src": "574:9:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13800,
+                  "mutability": "mutable",
+                  "name": "oldIds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "609:25:27",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 13798,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "609:7:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 13799,
+                    "nodeType": "ArrayTypeName",
+                    "src": "609:9:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "516:124:27"
+            },
+            "returnParameters": {
+              "id": 13804,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13803,
+                  "mutability": "mutable",
+                  "name": "power",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13805,
+                  "src": "658:12:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13802,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "658:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "657:14:27"
+            },
+            "scope": 13816,
+            "src": "502:170:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "81dd2fa0",
+            "id": 13815,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEquipment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13808,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13807,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13815,
+                  "src": "700:15:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13806,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "700:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "699:17:27"
+            },
+            "returnParameters": {
+              "id": 13814,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13810,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13815,
+                  "src": "740:10:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13809,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "740:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13813,
+                  "mutability": "mutable",
+                  "name": "attrs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13815,
+                  "src": "752:26:27",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_EquipmentAttr_$11153_memory_ptr",
+                    "typeString": "struct EquipmentAttr"
+                  },
+                  "typeName": {
+                    "id": 13812,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13811,
+                      "name": "EquipmentAttr",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 11153,
+                      "src": "752:13:27"
+                    },
+                    "referencedDeclaration": 11153,
+                    "src": "752:13:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_EquipmentAttr_$11153_storage_ptr",
+                      "typeString": "struct EquipmentAttr"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "739:40:27"
+            },
+            "scope": 13816,
+            "src": "678:102:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13817,
+        "src": "84:698:27"
+      }
+    ],
+    "src": "0:783:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Darwin.appleclang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-03-25T17:05:56.805Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "equip(address,uint32,uint256[],uint256[])": {
+        "params": {
+          "level": "角色当前等级",
+          "newIds": "新装备上的装备id 数组",
+          "oldIds": "之前装备上的装备id数组",
+          "operator": "操作者地址"
+        }
+      },
+      "mint(address,(uint32,uint8,uint8,uint8,bool,bool,uint256,uint32,uint32,uint32,uint32,uint32,uint32,(uint32,uint32,uint32,uint32,uint32,uint32,uint32)))": {
+        "params": {
+          "attr": "装备属性",
+          "to": "目标地址"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "equip(address,uint32,uint256[],uint256[])": {
+        "notice": "更新装备为装备状态"
+      },
+      "mint(address,(uint32,uint8,uint8,uint8,bool,bool,uint256,uint32,uint32,uint32,uint32,uint32,uint32,(uint32,uint32,uint32,uint32,uint32,uint32,uint32)))": {
+        "notice": "发行装备"
+      }
+    },
+    "version": 1
+  }
+}

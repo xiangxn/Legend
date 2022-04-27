@@ -1,0 +1,942 @@
+{
+  "contractName": "IBonusPool",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "total",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "current",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rebateRatio",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "bonusDuration",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "perFragmentToken",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "injectCapital",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"bonusDuration\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"current\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"injectCapital\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"perFragmentToken\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rebateRatio\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"total\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/include/IBonusPool.sol\":\"IBonusPool\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Structs.sol\":{\"keccak256\":\"0xf2869eeb09a8b799b5af2736f969390543d0f91ab4a1c7d3369e7457a48a2b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a7307d23f005394dfaa029d9a7624cb673078bdc10c58eb1fd2d2173278c5329\",\"dweb:/ipfs/QmXHvvC7zr2F1DnFKpFAr8aURZdkEisBqgWhnTEU4WdK35\"]},\"project:/contracts/include/IBonusPool.sol\":{\"keccak256\":\"0x67fe90cb686a275e658298a664e0f47db16fec1658a0e3dfec1a69a7db617522\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6820c3b6761f6ab17d494060fd704c71213c90f7a09867a1016197d4de1a70dc\",\"dweb:/ipfs/QmdboLtdQxxP5gTyZ2diNPcuybSpATearkmqtX5YZm6Cnd\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"../Structs.sol\";\n\ninterface IBonusPool {\n    // 奖金滚存\n    function total() external view returns (uint256);\n\n    // 当前期奖金\n    function current() external view returns (uint256);\n\n    // 返奖比例\n    function rebateRatio() external view returns (uint32);\n\n    // 返奖周期\n    function bonusDuration() external view returns (uint32);\n\n    // 每碎片Token数量\n    function perFragmentToken() external view returns (uint256);\n\n    // 注入奖金\n    function injectCapital(uint256 value) external;\n}\n",
+  "sourcePath": "/Users/necklace/work/Legend/Legend/contracts/include/IBonusPool.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/include/IBonusPool.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IBonusPool": [
+        13211
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 13212,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13179,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:13"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13180,
+        "nodeType": "ImportDirective",
+        "scope": 13212,
+        "sourceUnit": 11177,
+        "src": "57:24:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13211,
+        "linearizedBaseContracts": [
+          13211
+        ],
+        "name": "IBonusPool",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "2ddbd13a",
+            "id": 13185,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "total",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13181,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "144:2:13"
+            },
+            "returnParameters": {
+              "id": 13184,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13183,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13185,
+                  "src": "170:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13182,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "170:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "169:9:13"
+            },
+            "scope": 13211,
+            "src": "130:49:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9fa6a6e3",
+            "id": 13190,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "current",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "224:2:13"
+            },
+            "returnParameters": {
+              "id": 13189,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13188,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13190,
+                  "src": "250:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13187,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "250:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "249:9:13"
+            },
+            "scope": 13211,
+            "src": "208:51:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "0802ca82",
+            "id": 13195,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rebateRatio",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13191,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "305:2:13"
+            },
+            "returnParameters": {
+              "id": 13194,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13193,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13195,
+                  "src": "331:6:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13192,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "331:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "330:8:13"
+            },
+            "scope": 13211,
+            "src": "285:54:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "19979932",
+            "id": 13200,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bonusDuration",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13196,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "387:2:13"
+            },
+            "returnParameters": {
+              "id": 13199,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13198,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13200,
+                  "src": "413:6:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13197,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "412:8:13"
+            },
+            "scope": 13211,
+            "src": "365:56:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "c3e114cd",
+            "id": 13205,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "perFragmentToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13201,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "480:2:13"
+            },
+            "returnParameters": {
+              "id": 13204,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13203,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13205,
+                  "src": "506:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13202,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "506:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "505:9:13"
+            },
+            "scope": 13211,
+            "src": "455:60:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "5ecc7512",
+            "id": 13210,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "injectCapital",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13208,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13207,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13210,
+                  "src": "564:13:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13206,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "564:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "563:15:13"
+            },
+            "returnParameters": {
+              "id": 13209,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "587:0:13"
+            },
+            "scope": 13211,
+            "src": "541:47:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13212,
+        "src": "83:507:13"
+      }
+    ],
+    "src": "32:559:13"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/include/IBonusPool.sol",
+    "exportedSymbols": {
+      "CurrentHero": [
+        11072
+      ],
+      "EquipQuality": [
+        11119
+      ],
+      "EquipmentAttr": [
+        11153
+      ],
+      "EquipmentType": [
+        11115
+      ],
+      "FragmentInfo": [
+        11176
+      ],
+      "FragmentType": [
+        11123
+      ],
+      "Gender": [
+        11043
+      ],
+      "HeroAttrs": [
+        11108
+      ],
+      "HeroStatus": [
+        11047
+      ],
+      "IBonusPool": [
+        13211
+      ],
+      "LevelInfo": [
+        11165
+      ],
+      "MainAttrs": [
+        11087
+      ],
+      "Operate": [
+        11058
+      ],
+      "Profession": [
+        11040
+      ],
+      "SuitAttr": [
+        11160
+      ],
+      "TokenInfo": [
+        11063
+      ]
+    },
+    "id": 13212,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13179,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:13"
+      },
+      {
+        "absolutePath": "project:/contracts/Structs.sol",
+        "file": "../Structs.sol",
+        "id": 13180,
+        "nodeType": "ImportDirective",
+        "scope": 13212,
+        "sourceUnit": 11177,
+        "src": "57:24:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13211,
+        "linearizedBaseContracts": [
+          13211
+        ],
+        "name": "IBonusPool",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "2ddbd13a",
+            "id": 13185,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "total",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13181,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "144:2:13"
+            },
+            "returnParameters": {
+              "id": 13184,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13183,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13185,
+                  "src": "170:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13182,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "170:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "169:9:13"
+            },
+            "scope": 13211,
+            "src": "130:49:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9fa6a6e3",
+            "id": 13190,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "current",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "224:2:13"
+            },
+            "returnParameters": {
+              "id": 13189,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13188,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13190,
+                  "src": "250:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13187,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "250:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "249:9:13"
+            },
+            "scope": 13211,
+            "src": "208:51:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "0802ca82",
+            "id": 13195,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rebateRatio",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13191,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "305:2:13"
+            },
+            "returnParameters": {
+              "id": 13194,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13193,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13195,
+                  "src": "331:6:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13192,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "331:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "330:8:13"
+            },
+            "scope": 13211,
+            "src": "285:54:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "19979932",
+            "id": 13200,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bonusDuration",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13196,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "387:2:13"
+            },
+            "returnParameters": {
+              "id": 13199,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13198,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13200,
+                  "src": "413:6:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 13197,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "412:8:13"
+            },
+            "scope": 13211,
+            "src": "365:56:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "c3e114cd",
+            "id": 13205,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "perFragmentToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13201,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "480:2:13"
+            },
+            "returnParameters": {
+              "id": 13204,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13203,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13205,
+                  "src": "506:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13202,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "506:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "505:9:13"
+            },
+            "scope": 13211,
+            "src": "455:60:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "5ecc7512",
+            "id": 13210,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "injectCapital",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13208,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13207,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13210,
+                  "src": "564:13:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13206,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "564:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "563:15:13"
+            },
+            "returnParameters": {
+              "id": 13209,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "587:0:13"
+            },
+            "scope": 13211,
+            "src": "541:47:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13212,
+        "src": "83:507:13"
+      }
+    ],
+    "src": "32:559:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Darwin.appleclang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-03-25T17:05:56.799Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
